@@ -50,16 +50,6 @@
   </main>
 
   </section>
-  <script>
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault(); // Prevent page reload
-                const targetId = this.getAttribute('href').substring(1);
-                document.getElementById(targetId).scrollIntoView({
-                    behavior: 'smooth' // Smooth scroll
-                });
-            });
-        });
-    </script>
+
 </body>
 </html> 
