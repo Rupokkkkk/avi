@@ -2,98 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #4e54c8;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-top: 1rem;
-    }
-    .section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    .projects {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
-    .project {
-      background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-    @media (max-width: 600px) {
-      .projects {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Md Abrar Jahin</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
-    <p>Web Developer | Designer | Tech Enthusiast</p>
-    <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Publications</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Awards</a></li>
+        <li><a href="#">Teaching</a></li>
+        <li><a href="#">Hobbies</a></li>
+        <li><a href="#">Certifications</a></li>
+        <li><a href="#">CV</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="section">
-    <h2>About Me</h2>
-    <p>
-      Hi, I'm a developer passionate about building modern websites and web apps. 
-      I enjoy learning new technologies and solving problems through code.
-    </p>
-  </section>
+  <main class="container">
+    <section class="bio">
+      <h1><strong>Md Abrar</strong> Jahin</h1>
+      <p>CS PhD Student & Graduate Fellow, USC Viterbi | AI Researcher, Center on Knowledge Graphs, USC ISI</p>
+      <p>This is <em>Md Abrar Jahin, CSCA</em>; however, you can call me <strong>Abrar</strong>.</p>
 
-  <section class="section">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>Project One</h3>
-        <p>Brief description of your project. What it does and what tech you used.</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project">
-        <h3>Project Two</h3>
-        <p>Another project description goes here. Mention key features.</p>
-        <a href="#">View Project</a>
-      </div>
-    </div>
-  </section>
+      <p>I am a <strong>CS PhD student</strong> at the 
+        <span class="highlight">Thomas Lord Department of Computer Science, Viterbi School of Engineering, University of Southern California (USC)</span>.
+        I am affiliated with the <em>Center on Knowledge Graphs</em> at the 
+        <span class="highlight">Information Sciences Institute (ISI)</span>, located in Silicon Beach. 
+        I am co-advised by <strong>Prof. Craig Knoblock</strong> and <strong>Prof. Jay Pujara</strong>.
+        My research at ISI is supported by the <strong>Defense Advanced Research Projects Agency (DARPA)</strong>. 
+        I also received the <strong>USC Graduate Fellowship</strong> for my first year.
+      </p>
 
-  <section class="section">
-    <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
-    <p>GitHub: <a href="https://github.com/rupokavi" target="_blank">github.com/rupokavi</a></p>
-  </section>
+      <p>Before USC, I graduated in <strong>Industrial & Production Engineering (2024)</strong> from 
+        <span class="highlight">Khulna University of Engineering and Technology (KUET)</span>.
+      </p>
 
-  <footer>
-    © 2025 Your Name. All rights reserved.
-  </footer>
+      <p>
+        My research focuses on <strong>efficient deep learning</strong>, <strong>quantum machine learning</strong>, 
+        <strong>geometric deep learning</strong>, and <strong>trustworthy AI</strong>. 
+        I'm also interested in <strong>high-energy physics</strong>, 
+        <strong>healthcare</strong>, <strong>supply chain optimization</strong>, and more.
+      </p>
+
+      <p><strong>Contact:</strong><br>
+        abrar.jahin.2652[at]gmail.com<br>
+        jahin[at]usc.edu
+      </p>
+    </section>
+
+    <section class="photo">
+      <img src="profile.jpg" alt="Profile picture of Md Abrar Jahin" />
+      <p>Sufur Tower,<br>Kuril Chowrasta<br>Dhaka-1229, Bangladesh</p>
+    </section>
+  </main>
 </body>
 </html>
 
