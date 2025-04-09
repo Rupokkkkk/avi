@@ -1,159 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certifications</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certifications</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-        h1 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
 
-        p.intro {
-            margin-bottom: 40px;
-        }
+    p.intro {
+      margin-bottom: 40px;
+    }
 
-        .cert-block {
-            display: flex;
-            gap: 30px;
-            align-items: flex-start;
-            margin-bottom: 50px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 40px;
-        }
+    .cert-block {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      margin-bottom: 50px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 40px;
+      flex-direction: row-reverse; /* This places image on the right */
+    }
 
-        .cert-image {
-            flex: 1;
-            max-width: 300px;
-        }
+    .cert-image {
+      flex: 1;
+      max-width: 300px;
+    }
 
-        .cert-image img {
-            width: 100%;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+    .cert-image img {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
 
-        .cert-details {
-            flex: 2;
-        }
+    .cert-details {
+      flex: 2;
+    }
 
-        .cert-details h2 {
-            margin: 10px 0 5px;
-            font-size: 1.1em;
-            color: #2c3e50;
-        }
+    .cert-details h2 {
+      margin: 10px 0 5px;
+      font-size: 1.2em;
+      color: #2c3e50;
+    }
 
-        .cert-details .label {
-            font-weight: bold;
-        }
+    .cert-details .label {
+      font-weight: bold;
+    }
 
-        .skills span {
-            display: inline-block;
-            background-color: #e0e0e0;
-            padding: 2px 8px;
-            border-radius: 3px;
-            margin: 3px 5px 3px 0;
-            font-size: 0.85em;
-        }
+    .skills span {
+      display: inline-block;
+      background-color: #e0e0e0;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin: 3px 5px 3px 0;
+      font-size: 0.85em;
+    }
 
-        .verification {
-            color: #e67e22;
-            font-weight: bold;
-            margin-top: 10px;
-        }
+    .verification {
+      color: #e67e22;
+      font-weight: bold;
+      margin-top: 10px;
+    }
 
-        .ref-details {
-            margin-top: 20px;
-            font-size: 0.9em;
-            background: #f7f7f7;
-            padding: 15px;
-            border-radius: 4px;
-        }
+    .ref-details {
+      margin-top: 20px;
+      font-size: 0.9em;
+      background: #f7f7f7;
+      padding: 15px;
+      border-radius: 4px;
+    }
 
-    </style>
+  </style>
 </head>
 <body>
 
-    <h1>Certifications</h1>
-    <p class="intro">Some valuable certificates that I earned through my consistent hard work and dedication.</p>
+  <h1>Certifications</h1>
+  <p class="intro">Some valuable certificates that I earned through my consistent hard work and dedication.</p>
 
-    <!-- Certificate Block 1 -->
-    <div class="cert-block">
-        <div class="cert-image">
-            <img src="image.png" alt="MITx Certificate in Supply Chain">
-        </div>
-        <div class="cert-details">
-            <h2>CTL.SC4x: Supply Chain Technology and Systems</h2>
-            <p><span class="label">Institution:</span> MITx</p>
-            <p><span class="label">Subject:</span> Business & Management</p>
-            <p><span class="label">Level:</span> Advanced</p>
-            <div class="skills">
-                <span>Internet Protocols Suite</span>
-                <span>Shear (Sheet Metal)</span>
-                <span>SQL</span>
-                <span>Service-Oriented Architecture</span>
-                <span>Supply Chain Software</span>
-                <span>UML</span>
-                <span>Data Analysis</span>
-                <span>Web Services</span>
-                <span>Innovation</span>
-                <span>Warehouse Management</span>
-                <span>Project Management</span>
-                <span>Relational Databases</span>
-                <span>Big Data</span>
-                <span>Management</span>
-                <span>Data Modeling</span>
-            </div>
-            <p class="verification">Verification: Certificate</p>
-
-            <div class="ref-details">
-                <p><strong>Ref.:</strong> JTBL/PAC/FACTORY/2025/12</p>
-                <p><strong>Date:</strong> 23-March-2025</p>
-                <p>To Whom It May Concern,</p>
-                <p>JT International Bangladesh Limited certifies that Mr. Ruook Islam Avi successfully completed an Industrial Training Program.</p>
-            </div>
-        </div>
+  <!-- Certificate Block -->
+  <div class="cert-block">
+    <!-- Image on Right -->
+    <div class="cert-image">
+      <img src="image.png" alt="Certificate Image" />
     </div>
 
-    <!-- Certificate Block 2 -->
-    <div class="cert-block">
-        <div class="cert-image">
-            <img src="attachment_certificate.jpg" alt="MITx Certificate in Data Analysis">
-        </div>
-        <div class="cert-details">
-            <h2>6.431x: Probability – The Science of Uncertainty and Data</h2>
-            <p><span class="label">Institution:</span> MITx</p>
-            <p><span class="label">Subject:</span> Data Analysis & Statistics</p>
-            <p><span class="label">Level:</span> Advanced</p>
-            <div class="skills">
-                <span>Data Science</span>
-                <span>Basic Math</span>
-                <span>Probability</span>
-                <span>Stochastic Process</span>
-                <span>Statistics</span>
-                <span>Financial Market</span>
-                <span>Bayesian Inference</span>
-                <span>Data Analysis</span>
-                <span>Statistical Inference</span>
-                <span>Communications</span>
-                <span>Probability Theories</span>
-                <span>Markov Chain</span>
-                <span>Random Variables</span>
-            </div>
-            <p class="verification">Verification: Certificate</p>
-        </div>
+    <!-- Text on Left -->
+    <div class="cert-details">
+      <h2>6.431x: Probability – The Science of Uncertainty and Data</h2>
+      <p><span class="label">Institution:</span> MITx</p>
+      <p><span class="label">Subject:</span> Data Analysis & Statistics</p>
+      <p><span class="label">Level:</span> Advanced</p>
+      <div class="skills">
+        <span>Data Science</span>
+        <span>Basic Math</span>
+        <span>Probability</span>
+        <span>Stochastic Process</span>
+        <span>Statistics</span>
+        <span>Financial Market</span>
+        <span>Bayesian Inference</span>
+        <span>Data Analysis</span>
+        <span>Statistical Inference</span>
+        <span>Communications</span>
+        <span>Probability Theories</span>
+        <span>Markov Chain</span>
+        <span>Random Variables</span>
+      </div>
+      <p class="verification">Verification: Certificate</p>
+
+      <div class="ref-details">
+        <p><strong>Ref.:</strong> JTBL/PAC/FACTORY/2025/12</p>
+        <p><strong>Date:</strong> 23-March-2025</p>
+        <p>To Whom It May Concern,</p>
+        <p>JT International Bangladesh Limited certifies that Mr. Ruook Islam Avi successfully completed an Industrial Training Program.</p>
+      </div>
     </div>
+  </div>
 
 </body>
 </html>
