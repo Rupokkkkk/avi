@@ -215,6 +215,19 @@
       </div>
     </div>
   </div>
+  <script>
+  function toggleAbstract(button) {
+    const abstract = button.parentElement.nextElementSibling;
+    if (abstract.style.display === "none") {
+      abstract.style.display = "block";
+      button.textContent = "HIDE";
+    } else {
+      abstract.style.display = "none";
+      button.textContent = "ABS";
+    }
+  }
+</script>
+
 
 </body>
 </html>
