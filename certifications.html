@@ -9,151 +9,151 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 800px;
-            margin: 0 auto;
             padding: 20px;
+            max-width: 1200px;
+            margin: auto;
         }
-        
+
         h1 {
             color: #2c3e50;
             border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
         }
-        
-        h2 {
-            color: #2980b9;
-            margin-top: 30px;
+
+        p.intro {
+            margin-bottom: 40px;
         }
-        
-        .certification {
-            background-color: #f9f9f9;
-            border-left: 4px solid #3498db;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 0 4px 4px 0;
+
+        .cert-block {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 40px;
         }
-        
-        .institution {
-            font-weight: bold;
+
+        .cert-image {
+            flex: 1;
+            max-width: 300px;
+        }
+
+        .cert-image img {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .cert-details {
+            flex: 2;
+        }
+
+        .cert-details h2 {
+            margin: 10px 0 5px;
             font-size: 1.1em;
-            margin-bottom: 5px;
+            color: #2c3e50;
         }
-        
-        .subject {
-            font-style: italic;
-            color: #555;
+
+        .cert-details .label {
+            font-weight: bold;
         }
-        
-        .level {
-            display: inline-block;
-            background-color: #e8f4fc;
-            padding: 3px 8px;
-            border-radius: 3px;
-            font-size: 0.9em;
-            margin: 5px 0;
-        }
-        
-        .skills {
-            margin: 10px 0;
-            font-size: 0.9em;
-        }
-        
+
         .skills span {
             display: inline-block;
             background-color: #e0e0e0;
             padding: 2px 8px;
             border-radius: 3px;
-            margin-right: 5px;
-            margin-bottom: 5px;
+            margin: 3px 5px 3px 0;
             font-size: 0.85em;
         }
-        
+
         .verification {
-            font-size: 0.9em;
-            color: #27ae60;
+            color: #e67e22;
             font-weight: bold;
+            margin-top: 10px;
         }
-        
-        hr {
-            border: 0;
-            height: 1px;
-            background: #ddd;
-            margin: 30px 0;
+
+        .ref-details {
+            margin-top: 20px;
+            font-size: 0.9em;
+            background: #f7f7f7;
+            padding: 15px;
+            border-radius: 4px;
         }
+
     </style>
 </head>
 <body>
+
     <h1>Certifications</h1>
-    
-    <p>Some valuable certificates that I earned through my consistent hard work and dedication.</p>
-    
-    <hr>
-    
-    <div class="certification">
-        <div class="institution">Institution: MITx</div>
-        <div class="subject">Subject: Business & Management</div>
-        <div class="level">Level: Advanced</div>
-        <div class="skills">
-            Associated skills: 
-            <span>Internet Protocols Suite</span>
-            <span>Shear (Sheet Metal)</span>
-            <span>SQL (Programming Language)</span>
-            <span>Service-Oriented Architecture</span>
-            <span>Supply Chain Software</span>
-            <span>Unified Modeling Language</span>
-            <span>Data Analysis</span>
-            <span>Web Services</span>
-            <span>Innovation</span>
-            <span>Warehouse Management Systems</span>
-            <span>Project Management</span>
-            <span>Relational Databases</span>
-            <span>Supply Chain</span>
-            <span>Management</span>
-            <span>Big Data</span>
-            <span>Data Modeling</span>
+    <p class="intro">Some valuable certificates that I earned through my consistent hard work and dedication.</p>
+
+    <!-- Certificate Block 1 -->
+    <div class="cert-block">
+        <div class="cert-image">
+            <img src="image.png" alt="MITx Certificate in Supply Chain">
         </div>
-        <div class="verification">Verification: Certificate</div>
-      <div class="certificate-image">
-            <img src="attachment_certificate.jpg" alt="MITx Certificate in Business & Management">
-            <figcaption>MITx Certificate in Business & Management</figcaption>
-            
-            <!-- Optional: Add certificate details below the image -->
-            <div style="margin-top: 20px; font-size: 0.9em;">
+        <div class="cert-details">
+            <h2>CTL.SC4x: Supply Chain Technology and Systems</h2>
+            <p><span class="label">Institution:</span> MITx</p>
+            <p><span class="label">Subject:</span> Business & Management</p>
+            <p><span class="label">Level:</span> Advanced</p>
+            <div class="skills">
+                <span>Internet Protocols Suite</span>
+                <span>Shear (Sheet Metal)</span>
+                <span>SQL</span>
+                <span>Service-Oriented Architecture</span>
+                <span>Supply Chain Software</span>
+                <span>UML</span>
+                <span>Data Analysis</span>
+                <span>Web Services</span>
+                <span>Innovation</span>
+                <span>Warehouse Management</span>
+                <span>Project Management</span>
+                <span>Relational Databases</span>
+                <span>Big Data</span>
+                <span>Management</span>
+                <span>Data Modeling</span>
+            </div>
+            <p class="verification">Verification: Certificate</p>
+
+            <div class="ref-details">
                 <p><strong>Ref.:</strong> JTBL/PAC/FACTORY/2025/12</p>
                 <p><strong>Date:</strong> 23-March-2025</p>
                 <p>To Whom It May Concern,</p>
                 <p>JT International Bangladesh Limited certifies that Mr. Ruook Islam Avi successfully completed an Industrial Training Program.</p>
             </div>
-    
-    <div class="certification">
-        <div class="institution">Institution: MITx</div>
-        <div class="subject">Subject: Data Analysis & Statistics</div>
-        <div class="level">Level: Advanced</div>
-        <div class="skills">
-            Associated skills: 
-            <span>Data Science</span>
-            <span>Basic Math</span>
-            <span>Probability</span>
-            <span>Stochastic Process</span>
-            <span>Statistics</span>
-            <span>Financial Market</span>
-            <span>Bayesian Inference</span>
-            <span>Data Analysis</span>
-            <span>Statistical Inference</span>
-            <span>Communications</span>
-            <span>Probability Theories</span>
-            <span>Markov Chain</span>
-            <span>Random Variables</span>
         </div>
-        <div class="verification">Verification: Certificate</div>
     </div>
-    
-    <div class="certification">
-        <div class="institution">6.43ix: Probability - The Science of Uncertainty and Data</div>
+
+    <!-- Certificate Block 2 -->
+    <div class="cert-block">
+        <div class="cert-image">
+            <img src="attachment_certificate.jpg" alt="MITx Certificate in Data Analysis">
+        </div>
+        <div class="cert-details">
+            <h2>6.431x: Probability – The Science of Uncertainty and Data</h2>
+            <p><span class="label">Institution:</span> MITx</p>
+            <p><span class="label">Subject:</span> Data Analysis & Statistics</p>
+            <p><span class="label">Level:</span> Advanced</p>
+            <div class="skills">
+                <span>Data Science</span>
+                <span>Basic Math</span>
+                <span>Probability</span>
+                <span>Stochastic Process</span>
+                <span>Statistics</span>
+                <span>Financial Market</span>
+                <span>Bayesian Inference</span>
+                <span>Data Analysis</span>
+                <span>Statistical Inference</span>
+                <span>Communications</span>
+                <span>Probability Theories</span>
+                <span>Markov Chain</span>
+                <span>Random Variables</span>
+            </div>
+            <p class="verification">Verification: Certificate</p>
+        </div>
     </div>
+
 </body>
 </html>
-    
-    <div class="certification-container">
-        <div class="certification">
-            <div class="institution">Institution: MIT
