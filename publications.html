@@ -93,6 +93,15 @@
       background: #eee;
     }
 
+    .abstract {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      padding: 0 10px;
+      border: 1px dashed #888;
+      margin-top: 10px;
+    }
+
     @media (max-width: 768px) {
       .pub-entry {
         flex-direction: column;
@@ -112,21 +121,21 @@
 </head>
 <body>
 
-  <h1>Publications</h1>
-  <p>Publications by categories in reversed chronological order.</p>
-  <p>An up-to-date list is available on <a href="https://scholar.google.com/citations?user=pbKE0X8AAAAJ&hl=en">Google Scholar</a>.<br>
+<h1>Publications</h1>
+<p>Publications by categories in reversed chronological order.</p>
+<p>An up-to-date list is available on <a href="https://scholar.google.com/citations?user=pbKE0X8AAAAJ&hl=en">Google Scholar</a>.<br>
   * denotes equal contribution</p>
 
-  <div class="year">2025</div>
+<div class="year">2025</div>
 
 <div class="pub-entry">
   <div>
     <img src="https://via.placeholder.com/200x120.png?text=Image+1" alt="Publication Image 1">
   </div>
   <div class="pub-content">
-    <div class="pub-title">Harnessing Big Data and AI for Supply Chain Resilience in the Garments Industry: A Comparative Analysis of Bangladesh and China</div>
+    <div class="pub-title">Harnessing Big Data and AI for Supply Chain Resilience in the Garments Industry</div>
     <div class="authors">
-      <a href="#">Mushfiquddin Rafid</a>, <a href="#">Rupok Islam Avi</a>, <a href="#">Tunazzina Binta Mostafa</a>, and <a href="#">Rejwanul Haque Wasi</a>
+      <a href="#">Mushfiquddin Rafid</a>, <a href="#">Rupok Islam Avi</a>, <a href="#">Tunazzina Binta Mostafa</a>, <a href="#">Rejwanul Haque Wasi</a>
     </div>
     <div class="meta">Proceedings of the 7th Bangladeshi International Conference on Industrial Engineering and Operations Management, December 2024</div>
     <div class="btn-row">
@@ -135,120 +144,73 @@
       <button class="btn">BIB</button>
       <button class="btn">HTML</button>
     </div>
-      <!-- Abstract (initially hidden) -->
-    <div class="abstract" style="display: none; border: 1px dashed #888; padding: 10px; margin-top: 10px;">
-      The Readymade Garments Industry of Bangladesh contributes about 80% of the export earnings and is currently 
-positioned 2nd worldwide in exporting clothes and fabric industry. The competition within this industry is intensifying 
-rapidly. In addition to fierce global competition labor union movements and higher-quality market demands are 
-making it more challenging for brands to maintain their foothold. This study introduces strategies that may improve 
-the resiliency of the supply chain in Bangladesh's Garments using AI and Big Data tools. About 3-4 case study designs 
-are used in this study to compare the technological developments in Bangladesh's RMG industry with benchmark 
-practices in China. Secondary sources such as case studies (HLA group, Alibaba, H&M, Zara), scholarly works, 
-industry reports, and regulatory documents were used to gather data. The study shows China's adoption of advanced 
-AI tools such as AI-based quality control cameras, Big Query to data analyze, blockchain platforms like Hyperledger 
-Fabric, AI-generated digital patterns and Ethereum-based solutions, and physics-based simulators for garment 
-modeling, which is contributing at an streamline operations, enhance transparency. On the other hand, Bangladesh has 
-applied innovations like computer vision for quality inspections (Aamra vision by Amara technologies limited) and 
-predictive analytics for supply chain planning and many . Development is still hampered by inadequate investment in 
-digital technologies, a lack of qualified personnel, and inadequate infrastructure. Bangladesh's apparel and garments 
-industry can improve supply chain resilience, lower costs, and improve compliance with international standards by 
-giving targeted investments in AI and big data and making them a top priority. To ensure sustainability and long-term 
-competitiveness, this study offers policymakers, governments and business executives practical suggestions for 
-unlocking the full potential of AI and big data. 
+    <div class="abstract">
+      The Readymade Garments Industry of Bangladesh contributes about 80% of export earnings and is 2nd globally. This study compares Bangladesh and China’s use of AI and Big Data to enhance supply chain resilience. It analyzes cases such as H&M, Alibaba, and Aamra Vision. It finds Bangladesh faces challenges in tech adoption but has potential to improve transparency, efficiency, and competitiveness.
     </div>
   </div>
 </div>
 
+<div class="pub-entry">
+  <div>
+    <img src="https://via.placeholder.com/200x120.png?text=Image+2" alt="Publication Image 2">
+  </div>
+  <div class="pub-content">
+    <div class="pub-title">Integrating Demand Forecasting and EOQ for Inventory Management in the Pharmaceutical Sector</div>
+    <div class="authors">
+      <a href="#">Rupok Islam Avi</a>, <a href="#">Md. Ferdaous Al- Farabi</a>, <a href="#">Ifte Kharul Islam Nahid</a>, <a href="#">Md. Limonur Rahman Lingkon</a>, <a href="#">Dr. Md. Sanowar Hossain</a>
+    </div>
+    <div class="meta">Proceedings of the 7th Bangladeshi International Conference on Industrial Engineering and Operations Management, December 2024</div>
+    <div class="btn-row">
+      <button class="btn" onclick="toggleAbstract(this)">ABS</button>
+      <button class="btn">ARXIV</button>
+      <button class="btn">BIB</button>
+      <button class="btn">HTML</button>
+    </div>
+    <div class="abstract">
+      This study explores EOQ modeling with machine learning-based demand forecasting for efficient pharmaceutical inventory control. It demonstrates reduced costs and stockouts using a hybrid model tested in local pharmaceutical settings.
+    </div>
+  </div>
+</div>
 
-  <div class="pub-entry">
-    <div>
-      <img src="https://via.placeholder.com/200x120.png?text=Image+2" alt="Publication Image 2">
-    </div>
-    <div class="pub-content">
-      <div class="pub-title">Integrating Demand Forecasting and EOQ for Inventory Management in the Pharmaceutical Sector</div>
-      <div class="authors">
-        <a href="#">Rupok Islam Avi</a>, <a href="#">Md. Ferdaous Al- Farabi</a>, <a href="#">Ifte kharul Islam Nahid</a>,  <a href="#">Md. Limonur Rahman Lingkon</a>, and <a href="#">Dr. Md. Sanowar Hossain</a>
-      </div>
-      <div class="meta">Proceedings of the 7th Bangladeshi International Conference on Industrial Engineering and Operations Managemen, , December 2024</div>
-      <div class="btn-row">
-        <button class="btn" onclick="toggleAbstract(this)">ABS</button>
-        <button class="btn">ARXIV</button>
-        <button class="btn">BIB</button>
-        <button class="btn">HTML</button>
-      </div>
-      <!-- Abstract (initially hidden) -->
-    <div class="abstract" style="display: none; border: 1px dashed #888; padding: 10px; margin-top: 10px;">
-      Soybean leaf disease detection is critical for agricultural productivity but faces challenges due to visually similar symptoms and limited interpretability in conventional methods...
-    </div>
-    </div>
-  </div>
-  <div class="pub-entry">
-    <div>
-      <img src="https://via.placeholder.com/200x120.png?text=Image+2" alt="Publication Image 2">
-    </div>
-    <div class="pub-content">
-      <div class="pub-title">Optimizing Welders' Posture: A Study on Ergonomic Solutions to Mitigate MSDs</div>
-      <div class="authors">
-        <a href="#">Md. Mushiur Rahman</a>, <a href="#">Mir Md. Mofachel Hossain</a>, <a href="#">Md. Mohibul Islam</a>, and <a href="#">Rupok Islam Avi</a>
-      </div>
-      <div class="meta"> 6th International Conference on Mechanical, Industrial and Materials Engineering,December 2024</div>
-      <div class="btn-row">
-        <button class="btn">ABS</button>
-        <button class="btn">ARXIV</button>
-        <button class="btn">BIB</button>
-        <button class="btn">HTML</button>
-      </div>
-    </div>
-  </div>
-    <div class="pub-entry">
-    <div>
-      <img src="https://via.placeholder.com/200x120.png?text=Image+2" alt="Publication Image 2">
-    </div>
-    <div class="pub-content">
-      <div class="pub-title">Effect of Annealing Heat Treatment on Mechanical and Microstructural Properties of Electric Arc Welded TMT Rebar</div>
-      <div class="authors">
-        <a href="#">Samiul Islam Pranto</a>, <a href="#">Mashhud Hasan Al Faruq</a>, <a href="#">Mst Kasfia</a>,  <a href="#"> Rupok Islam Avi</a>, and and <a href="#">Fabliha Islam</a>
-      </div>
-      <div class="meta">Under Review</div>
-      <div class="btn-row">
-        <button class="btn">ABS</button>
-        <button class="btn">ARXIV</button>
-        <button class="btn">BIB</button>
-        <button class="btn">HTML</button>
-      </div>
-    </div>
-  </div>
-    <div class="pub-entry">
-    <div>
-      <img src="https://via.placeholder.com/200x120.png?text=Image+2" alt="Publication Image 2">
-    </div>
-    <div class="pub-content">
-      <div class="pub-title">Development of an Innovative Wheelchair-Bed for Enhanced Patient Care in Bangladesh: Integrating Comfort and Accessibility Features</div>
-      <div class="authors">
-        <a href="#">Rupok Islam Avi</a>, <a href="#">R. Rafiul Haque Ayon</a>, <a href="#">Md. Ariful Haque</a>, <a href="#">Shahed Mahmud</a>, <a href="#">Idrak Al Rakin</a>,<a href="#">Shah Md Tasrifur Rahim</a>, and <a href="#">Md Fardin Islam</a>
-      </div>
-      <div class="meta"> 6th International Conference on Mechanical, Industrial and Materials Engineering,December 2024</div>
-      <div class="btn-row">
-        <button class="btn">ABS</button>
-        <button class="btn">ARXIV</button>
-        <button class="btn">BIB</button>
-        <button class="btn">HTML</button>
-      </div>
-    </div>
-  </div>
-  <script>
+<!-- More pub-entry blocks can go here -->
+
+<script>
   function toggleAbstract(button) {
-    const abstract = button.parentElement.nextElementSibling;
-    if (abstract.style.display === "none") {
-      abstract.style.display = "block";
-      button.textContent = "HIDE";
-    } else {
-      abstract.style.display = "none";
+    const allAbstracts = document.querySelectorAll(".abstract");
+    const allButtons = document.querySelectorAll(".btn-row .btn");
+
+    const pubContent = button.closest(".pub-content");
+    const abstract = pubContent.querySelector(".abstract");
+
+    // Hide all others
+    allAbstracts.forEach(abs => {
+      if (abs !== abstract) {
+        abs.style.maxHeight = null;
+        abs.style.padding = "0 10px";
+        abs.style.overflow = "hidden";
+      }
+    });
+
+    allButtons.forEach(btn => {
+      if (btn !== button && btn.textContent === "HIDE") {
+        btn.textContent = "ABS";
+      }
+    });
+
+    // Toggle current
+    if (abstract.style.maxHeight) {
+      abstract.style.maxHeight = null;
+      abstract.style.padding = "0 10px";
+      abstract.style.overflow = "hidden";
       button.textContent = "ABS";
+    } else {
+      abstract.style.maxHeight = abstract.scrollHeight + "px";
+      abstract.style.padding = "10px";
+      abstract.style.overflow = "visible";
+      button.textContent = "HIDE";
     }
   }
 </script>
-
 
 </body>
 </html>
