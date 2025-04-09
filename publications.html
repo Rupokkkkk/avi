@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Publications</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: #fff;
+      color: #333;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .year {
+      font-size: 28px;
+      margin-top: 40px;
+    }
+
+    .pub-entry {
+      display: flex;
+      gap: 20px;
+      margin-top: 30px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 20px;
+    }
+
+    .pub-entry img {
+      width: 200px;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .pub-content {
+      flex: 1;
+    }
+
+    .badge {
+      background-color: #d6450b;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+
+    .pub-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .authors a {
+      color: #b7472a;
+      text-decoration: none;
+    }
+
+    .meta {
+      font-style: italic;
+      color: #555;
+    }
+
+    .btn-row {
+      margin-top: 10px;
+    }
+
+    .btn {
+      border: 1px solid #999;
+      background: #f9f9f9;
+      padding: 5px 10px;
+      font-size: 12px;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+
+    .btn:hover {
+      background: #eee;
+    }
+
+    @media (max-width: 768px) {
+      .pub-entry {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .pub-entry img {
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .pub-content {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Publications</h1>
+  <p>Publications by categories in reversed chronological order.</p>
+  <p>An up-to-date list is available on <a href="#">Google Scholar</a>.<br>
+  * denotes equal contribution</p>
+
+  <div class="year">2025</div>
+
+  <div class="pub-entry">
+    <div>
+      <div class="badge">IEEE TAFE</div>
+      <img src="https://via.placeholder.com/200x120.png?text=Image+1" alt="Publication Image 1">
+    </div>
+    <div class="pub-content">
+      <div class="pub-title">Soybean Disease Detection via Interpretable Hybrid CNN-GNN: Integrating MobileNetV2 and GraphSAGE with Cross-Modal Attention</div>
+      <div class="authors">
+        <a href="#">Md Abrar Jahin*</a>, <a href="#">Shahriar Soudeep*</a>, <a href="#">M. F. Mridha</a>, and <a href="#">Nilanjan Dey</a>
+      </div>
+      <div class="meta">Under review in IEEE Transactions on AgriFood Electronics, Mar 2025<br>
+      arXiv:2503.01284</div>
+      <div class="btn-row">
+        <button class="btn">ABS</button>
+        <button class="btn">ARXIV</button>
+        <button class="btn">BIB</button>
+        <button class="btn">HTML</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub-entry">
+    <div>
+      <div class="badge">IEA/AIE</div>
+      <img src="https://via.placeholder.com/200x120.png?text=Image+2" alt="Publication Image 2">
+    </div>
+    <div class="pub-content">
+      <div class="pub-title">CAGN-GAT Fusion: A Hybrid Contrastive Attentive Graph Neural Network for Network Intrusion Detection</div>
+      <div class="authors">
+        <a href="#">Md Abrar Jahin*</a>, <a href="#">Shahriar Soudeep*</a>, <a href="#">M. F. Mridha</a>, Raihan Kabir, <a href="#">Md Rashedul Islam</a>, and <a href="#">1 more author</a>
+      </div>
+      <div class="meta">In 38th International Conference on Industrial, Engineering & Other Applications of Applied Intelligent Systems (IEA/AIE 2025), Kitakyushu, Japan, Jul 2025</div>
+      <div class="btn-row">
+        <button class="btn">ABS</button>
+        <button class="btn">ARXIV</button>
+        <button class="btn">BIB</button>
+        <button class="btn">HTML</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
