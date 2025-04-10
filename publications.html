@@ -113,7 +113,22 @@
 <body>
  <!-- Placeholder for navbar -->
   <div id="navbar-container"></div>
+  <!-- Script to load navbar and highlight the active page link -->
+  <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('navbar-placeholder').innerHTML = html;
 
+        // After navbar is loaded, highlight the current page
+        const currentPage = window.location.pathname.split("/").pop();
+        document.querySelectorAll(".navbar a").forEach(link => {
+          if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+          }
+        });
+      });
+  </script>
 <h1>Publications</h1>
 <p>Publications by categories in reversed chronological order.</p>
 <p>An up-to-date list is available on <a href="https://scholar.google.com/citations?user=pbKE0X8AAAAJ&hl=en">Google Scholar</a>.<br>
