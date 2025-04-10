@@ -114,11 +114,12 @@
 
 <script>
   fetch('navbar.html')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('navbar-placeholder').innerHTML = data;
-      });
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar-placeholder').innerHTML = html;
+    });
 </script>
+
 <h1>Publications</h1>
 <p>Publications by categories in reversed chronological order.</p>
 <p>An up-to-date list is available on <a href="https://scholar.google.com/citations?user=pbKE0X8AAAAJ&hl=en">Google Scholar</a>.<br>
