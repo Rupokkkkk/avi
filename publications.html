@@ -110,19 +110,14 @@
   </style>
 </head>
 <body>
+<!-- Navbar placeholder will be replaced with the contents of navbar.html -->
+<div id="navbar-placeholder"></div>
+
 <script>
   fetch('navbar.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('navbar-placeholder').innerHTML = html;
-
-      // After navbar is loaded, highlight current page
-      const currentPage = window.location.pathname.split("/").pop();
-      document.querySelectorAll(".navbar a").forEach(link => {
-        if (link.getAttribute("href") === currentPage) {
-          link.classList.add("active");
-        }
-      });
     });
 </script>
 
