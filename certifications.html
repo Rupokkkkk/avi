@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="navbar-loader.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Certifications</title>
 <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -78,6 +85,26 @@
     }
 
   </style>
+</head>
+<body>
+     <!-- Placeholder for navbar -->
+  <div id="navbar-container"></div>
+  <!-- Script to load navbar and highlight the active page link -->
+  <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('navbar-placeholder').innerHTML = html;
+
+        // After navbar is loaded, highlight the current page
+        const currentPage = window.location.pathname.split("/").pop();
+        document.querySelectorAll(".navbar a").forEach(link => {
+          if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+          }
+        });
+      });
+  </script>
 
   <!-- Main Content Wrapper -->
   <div class="container">
