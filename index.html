@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
-  <script src="navbar-loader.js" defer></script> <!-- JS file to load navbar -->
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rupok Islam Avi</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="navbar-loader.js" defer></script> <!-- JS file to load navbar -->
   <style>
     body {
       font-family: "Segoe UI", sans-serif;
@@ -15,69 +15,35 @@
       color: #333;
       max-width: 1000px;
       margin-left: auto;
-      margin-right: auto;
+      margin-right: auto; 
     }
 
-    header {
-      color: #2c3e50;
-      border-bottom: 2px solid #3498db;
-      padding-bottom: 10px;
-    }
-
-    nav ul.nav-links {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-
-    nav ul.nav-links li a {
-      text-decoration: none;
-      color: #b7472a;
-      font-weight: 500;
-    }
-
-    nav ul.nav-links li a:hover {
-      text-decoration: underline;
-    }
-
-    main.container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      align-items: flex-start;
-    }
-
-    .bio {
-      flex: 1 1 60%;
-    }
-
-    .bio h1 {
+    h1 {
       font-size: 36px;
-      margin-bottom: 10px;
+      margin-bottom: 0;
     }
 
-    .bio p {
-      margin-bottom: 15px;
+    p {
+      font-size: 16px;
       line-height: 1.6;
     }
 
-    .photo {
-      flex: 1 1 30%;
-      text-align: center;
+    .bio-section {
+      margin-top: 40px;
     }
 
-    .photo img {
-      width: 100%;
-      max-width: 200px;
-      border-radius: 10px;
+    .bio-title {
+      font-weight: bold;
+      font-size: 16px;
     }
 
-    .photo p {
-      margin-top: 15px;
+    .bio-description {
       font-size: 14px;
       color: #555;
+    }
+
+    .bio-contact {
+      margin-top: 20px;
     }
 
     .highlight {
@@ -85,19 +51,41 @@
       padding: 2px 4px;
       border-radius: 4px;
     }
+
+    .btn-row {
+      margin-top: 20px;
+    }
+
+    .btn {
+      border: 1px solid #999;
+      background: #f9f9f9;
+      padding: 5px 10px;
+      font-size: 12px;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+
+    .btn:hover {
+      background: #eee;
+    }
+
+    @media (max-width: 768px) {
+      .bio-section {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   </style>
 </head>
 <body>
   <!-- Placeholder for navbar -->
   <div id="navbar-container"></div>
-
   <script>
     fetch('navbar.html')
       .then(res => res.text())
       .then(html => {
         document.getElementById('navbar-container').innerHTML = html;
-
-        // After navbar is loaded, highlight the current page
+        // Highlight the current page link
         const currentPage = window.location.pathname.split("/").pop();
         document.querySelectorAll(".navbar a").forEach(link => {
           if (link.getAttribute("href") === currentPage) {
@@ -107,48 +95,33 @@
       });
   </script>
 
-  <header>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">About</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="#">Research</a></li>
-        <li><a href="#">Awards</a></li>
-        <li><a href="#">Teaching</a></li>
-        <li><a href="#">Hobbies</a></li>
-        <li><a href="certifications.html">Certifications</a></li>
-        <li><a href="#">CV</a></li>
-      </ul>
-    </nav>
-  </header>
+  <h1>Rupok Islam Avi</h1>
+  <p>Industrial & Production Engineering Undergraduate | Research Enthusiast</p>
 
-  <main class="container">
-    <section class="bio">
-      <h1><strong>Rupok Islam</strong> Avi</h1>
-      <p>IPE Undergrad Student, RUET | Research Enthusiast</p>
+  <div class="bio-section">
+    <div class="bio-title">Biography</div>
+    <div class="bio-description">
+      I am an undergraduate student of <strong>Industrial & Production Engineering</strong> at the 
+      <span class="highlight">Department of IPE, Rajshahi University of Engineering & Technology (RUET), Rajshahi</span>.
+      My research focuses on <strong>risk management</strong>, <strong>operations research</strong>, and <strong>machine learning</strong>.
+    </div>
+  </div>
 
-      <p>This is <em>Rupok Islam Avi</em>; however, you can call me <strong>Avi</strong>.</p>
+  <div class="bio-section">
+    <div class="bio-title">Contact</div>
+    <div class="bio-description">
+      Email: <strong>rupokislamavi.ruet@gmail.com</strong><br>
+      Location: Pallabi, Mirpur-12, Dhaka-1216, Bangladesh
+    </div>
+  </div>
 
-      <p>
-        I am an undergraduate student of <strong>Industrial & Production Engineering</strong> at the 
-        <span class="highlight">Department of IPE, Rajshahi University of Engineering & Technology (RUET), Rajshahi</span>.
-      </p>
+  <div class="btn-row">
+    <button class="btn">CV</button>
+    <button class="btn">Research</button>
+    <button class="btn">Awards</button>
+    <button class="btn">Teaching</button>
+  </div>
 
-      <p>
-        My research focuses on <strong>risk management</strong>, <strong>operations research</strong>, 
-        <strong>machine learning</strong>. 
-        I'm also interested in <strong>healthcare</strong>, <strong>supply chain optimization</strong>, and more.
-      </p>
-
-      <p><strong>Contact:</strong><br>
-        rupokislamavi.ruet@gmail.com<br>
-      </p>
-    </section>
-
-    <section class="photo">
-      <img src="profile.jpg" alt="Profile picture of Rupok Islam Avi" />
-      <p>Pallabi,<br>Mirpur-12<br>Dhaka-1216, Bangladesh</p>
-    </section>
-  </main>
 </body>
 </html>
+
