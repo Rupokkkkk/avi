@@ -1,74 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <link rel="stylesheet" href="styles.css">
-  <script src="navbar-loader.js" defer></script>
-  <meta charset="UTF-8">
-  <title>Certifications</title>
-  <style>
+<style>
     body {
-      font-family: "Segoe UI", sans-serif;
-      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
       padding: 40px;
-      background: #fff;
-      color: #333;
       max-width: 1000px;
       margin-left: auto;
       margin-right: auto;
+
     }
 
     h1 {
-      font-size: 36px;
-      margin-bottom: 0;
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
     }
 
-    .cert-entry {
-      margin-top: 30px;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 20px;
+    p.intro {
+      margin-bottom: 40px;
     }
 
-    .cert-title {
+    .cert-block {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      margin-bottom: 50px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 40px;
+      flex-direction: row-reverse; /* This places image on the right */
+    }
+
+    .cert-image {
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .cert-image img {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .cert-details {
+      flex: 2;
+    }
+
+    .cert-details h2 {
+      margin: 10px 0 5px;
+      font-size: 1.2em;
+      color: #2c3e50;
+    }
+
+    .cert-details .label {
       font-weight: bold;
-      font-size: 18px;
     }
 
-    .cert-org {
-      color: #555;
-      font-style: italic;
-      margin-bottom: 5px;
-    }
-
-    .cert-link {
+    .skills span {
       display: inline-block;
-      margin-top: 5px;
-      font-size: 14px;
-      color: #b7472a;
-      text-decoration: none;
+      background-color: #e0e0e0;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin: 3px 5px 3px 0;
+      font-size: 0.85em;
     }
 
-    .cert-link:hover {
-      text-decoration: underline;
+    .verification {
+      color: #e67e22;
+      font-weight: bold;
+      margin-top: 10px;
     }
+
+    .ref-details {
+      margin-top: 20px;
+      font-size: 0.9em;
+      background: #f7f7f7;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
   </style>
-</head>
-<body>
-  <!-- Placeholder for navbar -->
-  <div id="navbar-container"></div>
-  <script>
-    fetch('navbar.html')
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById('navbar-container').innerHTML = html;
-
-        const currentPage = window.location.pathname.split("/").pop();
-        document.querySelectorAll(".navbar a").forEach(link => {
-          if (link.getAttribute("href") === currentPage) {
-            link.classList.add("active");
-          }
-        });
-      });
-  </script>
 
   <!-- Main Content Wrapper -->
   <div class="container">
