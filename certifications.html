@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <script src="navbar-loader.js" defer></script> <!-- JS file to load navbar -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Certifications</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="navbar-loader.js" defer></script>
+
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
       color: #333;
+      margin: 0;
+    }
+
+    .content-container {
       padding: 20px;
       max-width: 1200px;
       margin: auto;
@@ -20,6 +24,7 @@
       color: #2c3e50;
       border-bottom: 2px solid #3498db;
       padding-bottom: 10px;
+      margin-top: 20px;
     }
 
     p.intro {
@@ -33,7 +38,7 @@
       margin-bottom: 50px;
       border-bottom: 1px solid #ddd;
       padding-bottom: 40px;
-      flex-direction: row-reverse; /* This places image on the right */
+      flex-direction: row-reverse; /* Image on right */
     }
 
     .cert-image {
@@ -83,195 +88,174 @@
       padding: 15px;
       border-radius: 4px;
     }
-
   </style>
-   
 </head>
 <body>
-   <!-- Placeholder for navbar -->
+  <!-- Navbar loads here -->
   <div id="navbar-container"></div>
-  <!-- Script to load navbar and highlight the active page link -->
-  <script>
-    fetch('navbar.html')
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById('navbar-placeholder').innerHTML = html;
 
-        // After navbar is loaded, highlight the current page
-        const currentPage = window.location.pathname.split("/").pop();
-        document.querySelectorAll(".navbar a").forEach(link => {
-          if (link.getAttribute("href") === currentPage) {
-            link.classList.add("active");
-          }
-        });
-      });
-  </script>
+  <div class="content-container">
+    <h1>Certifications</h1>
+    <p class="intro">Some valuable certificates that I earned through my consistent hard work and dedication.</p>
 
-  <h1>Certifications</h1>
-  <p class="intro">Some valuable certificates that I earned through my consistent hard work and dedication.</p>
+    <!-- Certificate 1 -->
+    <div class="cert-block">
+      <div class="cert-image">
+        <img src="attachment_certificate.jpg" alt="Certificate Image" />
+      </div>
+      <div class="cert-details">
+        <h2>Industrial Attachment at JTI Bangladesh Tongi Factory</h2>
+        <p><span class="label">Factory:</span> JTI Tongi</p>
+        <p><span class="label">Subject:</span> Industrial Attachment</p>
+        <p><span class="label">Level:</span> Advanced</p>
+        <div class="skills">
+          <span>Industrial Safety & Compliance</span>
+          <span>Equipment Handling & Maintenance Awareness</span>
+          <span>Manufacturing Process Knowledge</span>
+          <span>Data Collection & Analysis</span>
+          <span>Root Cause Analysis</span>
+          <span>Teamwork & Collaboration</span>
+          <span>Communication Skills</span>
+          <span>Time Management</span>
+          <span>Adaptability</span>
+          <span>Quality Control Techniques</span>
+        </div>
+        <p class="verification">Verification: Certificate</p>
+        <div class="ref-details">
+          <p><strong>Ref.:</strong> JTBL/PAC/FACTORY/2025/12</p>
+          <p><strong>Date:</strong> 23-March-2025</p>
+          <p>To Whom It May Concern,</p>
+          <p>JT International Bangladesh Limited certifies that Mr. Ruook Islam Avi successfully completed an Industrial Training Program.</p>
+        </div>
+      </div>
+    </div>
 
-  <!-- Certificate Block -->
-<div class="cert-block">
-  <!-- Image on Right -->
-  <div class="cert-image">
-    <img src="attachment_certificate.jpg" alt="Certificate Image" />
-  </div>
+    <!-- Certificate 2 -->
+    <div class="cert-block">
+      <div class="cert-image">
+        <img src="ml.jpg" alt="Machine Learning Certificate" />
+      </div>
+      <div class="cert-details">
+        <h2>Machine Learning Specialization</h2>
+        <p><span class="label">Institution:</span> Stanford University & DeepLearning.AI (via Coursera)</p>
+        <p><span class="label">Subject:</span> Machine Learning</p>
+        <p><span class="label">Level:</span> Intermediate</p>
+        <p><span class="label">Date:</span> May 2, 2024</p>
+        <div class="skills">
+          <span>Supervised Learning</span>
+          <span>Regression</span>
+          <span>Classification</span>
+          <span>Unsupervised Learning</span>
+          <span>Reinforcement Learning</span>
+          <span>Neural Networks</span>
+          <span>Decision Trees</span>
+          <span>Clustering</span>
+          <span>Recommender Systems</span>
+        </div>
+        <p class="verification">
+          Verification: <a href="https://coursera.org/verify/specialization/SLC4HWCMEXMY" target="_blank">View Certificate</a>
+        </p>
+      </div>
+    </div>
 
-  <!-- Text on Left -->
-  <div class="cert-details">
-    <h2>Industrial Attachment at JTI Bangladesh Tongi Factory</h2>
-    <p><span class="label">Factory:</span> JTI Tongi </p>
-    <p><span class="label">Subject:</span> Industrial Attachment</p>
-    <p><span class="label">Level:</span> Advanced</p>
-    <div class="skills">
-      <span>Industrial Safety & Compliance</span>
-      <span>Equipment Handling & Maintenance Awareness</span>
-      <span>Manufacturing Process Knowledge</span>
-      <span>Data Collection & Analysis</span>
-      <span>Root Cause Analysis</span>
-      <span>Teamwork & Collaboration</span>
-      <span>Communication Skills</span>
-      <span>Time Management</span>
-      <span>Adaptability</span>
-      <span>Quality Control Techniques</span>
+    <!-- Certificate 3 -->
+    <div class="cert-block">
+      <div class="cert-image">
+        <img src="supervised.jpg" alt="Supervised Machine Learning" />
+      </div>
+      <div class="cert-details">
+        <h2>Supervised Machine Learning: Regression and Classification</h2>
+        <p><span class="label">Institution:</span> Stanford University & DeepLearning.AI (via Coursera)</p>
+        <p><span class="label">Subject:</span> Supervised Machine Learning</p>
+        <p><span class="label">Level:</span> Intermediate</p>
+        <p><span class="label">Date:</span> May 2, 2024</p>
+        <div class="skills">
+          <span>Supervised Learning</span>
+          <span>Regression</span>
+          <span>Classification</span>
+          <span>Theoretical Computer Science</span>
+          <span>Continuous Integration</span>
+        </div>
+        <p class="verification">
+          Verification: <a href="https://www.coursera.org/account/accomplishments/verify/Z6J9VVH78P6Y" target="_blank">View Certificate</a>
+        </p>
+      </div>
     </div>
-    <p class="verification">Verification: Certificate</p>
 
-    <div class="ref-details">
-      <p><strong>Ref.:</strong> JTBL/PAC/FACTORY/2025/12</p>
-      <p><strong>Date:</strong> 23-March-2025</p>
-      <p>To Whom It May Concern,</p>
-      <p>JT International Bangladesh Limited certifies that Mr. Ruook Islam Avi successfully completed an Industrial Training Program.</p>
+    <!-- Certificate 4 -->
+    <div class="cert-block">
+      <div class="cert-image">
+        <img src="advanced.jpg" alt="Advanced Learning Algorithms" />
+      </div>
+      <div class="cert-details">
+        <h2>Advanced Learning Algorithms</h2>
+        <p><span class="label">Institution:</span> Stanford University & DeepLearning.AI (via Coursera)</p>
+        <p><span class="label">Subject:</span> Supervised Machine Learning</p>
+        <p><span class="label">Level:</span> Advanced</p>
+        <p><span class="label">Date:</span> May 1, 2024</p>
+        <div class="skills">
+          <span>Statistical Analysis</span>
+          <span>Training</span>
+          <span>Artificial Neural Networks</span>
+          <span>Decision Making</span>
+          <span>Human Learning</span>
+          <span>Applied Machine Learning</span>
+        </div>
+        <p class="verification">
+          Verification: <a href="https://www.coursera.org/account/accomplishments/verify/W7P95ZSKNZW8" target="_blank">View Certificate</a>
+        </p>
+      </div>
     </div>
-  </div>
-</div> <!-- ✅ Correctly closes the first .cert-block -->
 
-<!-- Certificate 2: Machine Learning (Coursera) -->
-<div class="cert-block">
-  <div class="cert-image">
-    <img src="ml.jpg" alt="Machine Learning Certificate" />
-  </div>
-  <div class="cert-details">
-    <h2>Machine Learning Specialization</h2>
-    <p><span class="label">Institution:</span> Stanford University & DeepLearning.AI (via Coursera)</p>
-    <p><span class="label">Subject:</span> Machine Learning</p>
-    <p><span class="label">Level:</span> Intermediate</p>
-    <p><span class="label">Date:</span> May 2, 2024</p>
-    <div class="skills">
-      <span>Supervised Learning</span>
-      <span>Regression</span>
-      <span>Classification</span>
-      <span>Unsupervised Learning</span>
-      <span>Reinforcement Learning</span>
-      <span>Neural Networks</span>
-      <span>Decision Trees</span>
-      <span>Clustering</span>
-      <span>Recommender Systems</span>
+    <!-- Certificate 5 -->
+    <div class="cert-block">
+      <div class="cert-image">
+        <img src="python.jpg" alt="Crash Course on Python" />
+      </div>
+      <div class="cert-details">
+        <h2>Crash Course on Python</h2>
+        <p><span class="label">Institution:</span> Google</p>
+        <p><span class="label">Subject:</span> Python Programming</p>
+        <p><span class="label">Level:</span> Intermediate</p>
+        <p><span class="label">Date:</span> March 5, 2024</p>
+        <div class="skills">
+          <span>Basic Python Syntax</span>
+          <span>Object-Oriented Programming (OOP)</span>
+          <span>Fundamental Programming Concepts</span>
+          <span>Basic Python Data Structures</span>
+          <span>Python Programming</span>
+        </div>
+        <p class="verification">
+          Verification: <a href="https://www.coursera.org/account/accomplishments/verify/JL5HRUYMXMHC" target="_blank">View Certificate</a>
+        </p>
+      </div>
     </div>
-    <p class="verification">
-      Verification: 
-      <a href="https://coursera.org/verify/specialization/SLC4HWCMEXMY" target="_blank">View Certificate</a>
-    </p>
-  </div>
-</div>
-<!-- Certificate 3:Supervised Machine Learning: Regression and Classification -->
-<div class="cert-block">
-  <div class="cert-image">
-    <img src="supervised.jpg" alt="Supervised Machine Learning: Regression and Classification" />
-  </div>
-  <div class="cert-details">
-    <h2>Supervised Machine Learning: Regression and Classification</h2>
-    <p><span class="label">Institution:</span> Stanford University & DeepLearning.AI (via Coursera)</p>
-    <p><span class="label">Subject:</span> Supervised Machine Learning</p>
-    <p><span class="label">Level:</span> Intermediate</p>
-    <p><span class="label">Date:</span> May 2, 2024</p>
-    <div class="skills">
-      <span>Supervised Learning</span>
-      <span>Regression</span>
-      <span>Classification</span>
-      <span>Theoretical Computer Science</span>
-      <span>Continuous Integration</span>
+
+    <!-- Certificate 6 -->
+    <div class="cert-block">
+      <div class="cert-image">
+        <img src="unsupervised.jpg" alt="Unsupervised Learning" />
+      </div>
+      <div class="cert-details">
+        <h2>Unsupervised Learning, Recommenders, Reinforcement Learning</h2>
+        <p><span class="label">Institution:</span> Stanford University & DeepLearning.AI (via Coursera)</p>
+        <p><span class="label">Subject:</span> Unsupervised & Reinforcement Learning</p>
+        <p><span class="label">Level:</span> Intermediate</p>
+        <p><span class="label">Date:</span> May 1, 2024</p>
+        <div class="skills">
+          <span>Deep Learning</span>
+          <span>Artificial Neural Networks</span>
+          <span>Algorithms</span>
+          <span>Advice for Model Development</span>
+          <span>Tensorflow</span>
+          <span>Applied Machine Learning</span>
+          <span>Machine Learning Algorithms</span>
+        </div>
+        <p class="verification">
+          Verification: <a href="https://www.coursera.org/account/accomplishments/verify/F2RNAEBWYS6A" target="_blank">View Certificate</a>
+        </p>
+      </div>
     </div>
-    <p class="verification">
-      Verification: 
-      <a href="https://www.coursera.org/account/accomplishments/verify/Z6J9VVH78P6Y" target="_blank">View Certificate</a>
-    </p>
   </div>
-</div>
-<!-- Certificate 4:Advanced Learning Algorithms -->
-<div class="cert-block">
-  <div class="cert-image">
-    <img src="advanced.jpg" alt="Advanced Learning Algorithms" />
-  </div>
-  <div class="cert-details">
-    <h2>Advanced Learning Algorithms</h2>
-    <p><span class="label">Institution:</span> Stanford University & DeepLearning.AI (via Coursera)</p>
-    <p><span class="label">Subject:</span> Supervised Machine Learning</p>
-    <p><span class="label">Level:</span> Advance</p>
-    <p><span class="label">Date:</span> May 1, 2024</p>
-    <div class="skills">
-      <span>Statistical Analysis</span>
-      <span>Training</span>
-      <span>Artificial Neural Networks</span>
-      <span>Decision Making</span>
-      <span>Human Learning</span>
-      <span>Applied Machine Learning</span>
-    </div>
-    <p class="verification">
-      Verification: 
-      <a href="https://www.coursera.org/account/accomplishments/verify/W7P95ZSKNZW8" target="_blank">View Certificate</a>
-    </p>
-  </div>
-</div>
-<!-- Certificate 5:Crash Course on Python -->
-<div class="cert-block">
-  <div class="cert-image">
-    <img src="python.jpg" alt="Crash Course on Python" />
-  </div>
-  <div class="cert-details">
-    <h2>Advanced Learning Algorithms</h2>
-    <p><span class="label">Institution:</span> Google</p>
-    <p><span class="label">Subject:</span> Python Programming</p>
-    <p><span class="label">Level:</span> Intermediate</p>
-    <p><span class="label">Date:</span> March 5, 2024</p>
-    <div class="skills">
-      <span>Basic Python Syntax</span>
-      <span>Object-Oriented Programming (OOP)</span>
-      <span>Fundamental Programming Concepts</span>
-      <span>Basic Python Data Structures</span>
-      <span>Python Programming</span>
-    </div>
-    <p class="verification">
-      Verification: 
-      <a href="https://www.coursera.org/account/accomplishments/verify/JL5HRUYMXMHC" target="_blank">View Certificate</a>
-    </p>
-  </div>
-</div>
- <!-- Certificate 6:Unsupervised Learning, Recommenders, Reinforcement Learning -->
-<div class="cert-block">
-  <div class="cert-image">
-    <img src="unsupervised.jpg" alt="Unsupervised Learning, Recommenders, Reinforcement Learning" />
-  </div>
-  <div class="cert-details">
-    <h2>Unsupervised Learning, Recommenders, Reinforcement Learning</h2>
-    <p><span class="label">Institution:</span> Stanford University & DeepLearning.AI (via Coursera</p>
-    <p><span class="label">Subject:</span> Unsupervised & Reinforcement Learning</p>
-    <p><span class="label">Level:</span> Intermediate</p>
-    <p><span class="label">Date:</span> May 1, 2024</p>
-    <div class="skills">
-      <span>Deep Learning</span>
-      <span>Artificial Neural Networks</span>
-      <span>Algorithms</span>
-      <span>Advice for Model Development</span>
-      <span>Tensorflow</span>
-      <span>Applied Machine Learning</span>
-      <span>Machine Learning Algorithms</span>
-    </div>
-    <p class="verification">
-      Verification: 
-      <a href="https://www.coursera.org/account/accomplishments/verify/F2RNAEBWYS6A" target="_blank">View Certificate</a>
-    </p>
-  </div>
-</div> 
 </body>
 </html>
