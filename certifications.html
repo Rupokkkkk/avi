@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="navbar-loader.js" defer></script> <!-- JS file to load navbar -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Certifications</title>
@@ -85,6 +87,24 @@
   </style>
 </head>
 <body>
+   <!-- Placeholder for navbar -->
+  <div id="navbar-container"></div>
+  <!-- Script to load navbar and highlight the active page link -->
+  <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('navbar-placeholder').innerHTML = html;
+
+        // After navbar is loaded, highlight the current page
+        const currentPage = window.location.pathname.split("/").pop();
+        document.querySelectorAll(".navbar a").forEach(link => {
+          if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+          }
+        });
+      });
+  </script>
 
   <h1>Certifications</h1>
   <p class="intro">Some valuable certificates that I earned through my consistent hard work and dedication.</p>
