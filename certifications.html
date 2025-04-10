@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="navbar-loader.js" defer></script> <!-- JS file to load navbar -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Certifications</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="navbar-loader.js" defer></script>
-
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
       color: #333;
       margin: 0;
+      padding: 0;
     }
 
-    .content-container {
-      padding: 20px;
+    .container {
       max-width: 1200px;
       margin: auto;
+      padding: 20px;
     }
 
     h1 {
       color: #2c3e50;
       border-bottom: 2px solid #3498db;
       padding-bottom: 10px;
-      margin-top: 20px;
     }
 
     p.intro {
@@ -38,7 +38,7 @@
       margin-bottom: 50px;
       border-bottom: 1px solid #ddd;
       padding-bottom: 40px;
-      flex-direction: row-reverse; /* Image on right */
+      flex-direction: row-reverse;
     }
 
     .cert-image {
@@ -91,21 +91,38 @@
   </style>
 </head>
 <body>
-  <!-- Navbar loads here -->
+  <!-- Placeholder for navbar -->
   <div id="navbar-container"></div>
 
-  <div class="content-container">
+  <!-- Script to load navbar and highlight the active page link -->
+  <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('navbar-container').innerHTML = html;
+
+        const currentPage = window.location.pathname.split("/").pop();
+        document.querySelectorAll(".navbar a").forEach(link => {
+          if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+          }
+        });
+      });
+  </script>
+
+  <!-- Main Content Wrapper -->
+  <div class="container">
     <h1>Certifications</h1>
     <p class="intro">Some valuable certificates that I earned through my consistent hard work and dedication.</p>
 
-    <!-- Certificate 1 -->
+    <!-- Certificate Block 1 -->
     <div class="cert-block">
       <div class="cert-image">
         <img src="attachment_certificate.jpg" alt="Certificate Image" />
       </div>
       <div class="cert-details">
         <h2>Industrial Attachment at JTI Bangladesh Tongi Factory</h2>
-        <p><span class="label">Factory:</span> JTI Tongi</p>
+        <p><span class="label">Factory:</span> JTI Tongi </p>
         <p><span class="label">Subject:</span> Industrial Attachment</p>
         <p><span class="label">Level:</span> Advanced</p>
         <div class="skills">
@@ -130,7 +147,7 @@
       </div>
     </div>
 
-    <!-- Certificate 2 -->
+    <!-- Certificate Block 2 -->
     <div class="cert-block">
       <div class="cert-image">
         <img src="ml.jpg" alt="Machine Learning Certificate" />
@@ -153,15 +170,16 @@
           <span>Recommender Systems</span>
         </div>
         <p class="verification">
-          Verification: <a href="https://coursera.org/verify/specialization/SLC4HWCMEXMY" target="_blank">View Certificate</a>
+          Verification: 
+          <a href="https://coursera.org/verify/specialization/SLC4HWCMEXMY" target="_blank">View Certificate</a>
         </p>
       </div>
     </div>
 
-    <!-- Certificate 3 -->
+    <!-- Certificate Block 3 -->
     <div class="cert-block">
       <div class="cert-image">
-        <img src="supervised.jpg" alt="Supervised Machine Learning" />
+        <img src="supervised.jpg" alt="Supervised Machine Learning: Regression and Classification" />
       </div>
       <div class="cert-details">
         <h2>Supervised Machine Learning: Regression and Classification</h2>
@@ -177,12 +195,13 @@
           <span>Continuous Integration</span>
         </div>
         <p class="verification">
-          Verification: <a href="https://www.coursera.org/account/accomplishments/verify/Z6J9VVH78P6Y" target="_blank">View Certificate</a>
+          Verification: 
+          <a href="https://www.coursera.org/account/accomplishments/verify/Z6J9VVH78P6Y" target="_blank">View Certificate</a>
         </p>
       </div>
     </div>
 
-    <!-- Certificate 4 -->
+    <!-- Certificate Block 4 -->
     <div class="cert-block">
       <div class="cert-image">
         <img src="advanced.jpg" alt="Advanced Learning Algorithms" />
@@ -202,12 +221,13 @@
           <span>Applied Machine Learning</span>
         </div>
         <p class="verification">
-          Verification: <a href="https://www.coursera.org/account/accomplishments/verify/W7P95ZSKNZW8" target="_blank">View Certificate</a>
+          Verification: 
+          <a href="https://www.coursera.org/account/accomplishments/verify/W7P95ZSKNZW8" target="_blank">View Certificate</a>
         </p>
       </div>
     </div>
 
-    <!-- Certificate 5 -->
+    <!-- Certificate Block 5 -->
     <div class="cert-block">
       <div class="cert-image">
         <img src="python.jpg" alt="Crash Course on Python" />
@@ -226,15 +246,16 @@
           <span>Python Programming</span>
         </div>
         <p class="verification">
-          Verification: <a href="https://www.coursera.org/account/accomplishments/verify/JL5HRUYMXMHC" target="_blank">View Certificate</a>
+          Verification: 
+          <a href="https://www.coursera.org/account/accomplishments/verify/JL5HRUYMXMHC" target="_blank">View Certificate</a>
         </p>
       </div>
     </div>
 
-    <!-- Certificate 6 -->
+    <!-- Certificate Block 6 -->
     <div class="cert-block">
       <div class="cert-image">
-        <img src="unsupervised.jpg" alt="Unsupervised Learning" />
+        <img src="unsupervised.jpg" alt="Unsupervised Learning, Recommenders, Reinforcement Learning" />
       </div>
       <div class="cert-details">
         <h2>Unsupervised Learning, Recommenders, Reinforcement Learning</h2>
@@ -252,7 +273,8 @@
           <span>Machine Learning Algorithms</span>
         </div>
         <p class="verification">
-          Verification: <a href="https://www.coursera.org/account/accomplishments/verify/F2RNAEBWYS6A" target="_blank">View Certificate</a>
+          Verification: 
+          <a href="https://www.coursera.org/account/accomplishments/verify/F2RNAEBWYS6A" target="_blank">View Certificate</a>
         </p>
       </div>
     </div>
