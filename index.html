@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rupok Islam Avi</title>
-  <link rel="stylesheet" href="style.css">
   <style>
+    /* Unified CSS for both pages */
     body {
       font-family: "Segoe UI", sans-serif;
       margin: 0;
@@ -17,23 +17,13 @@
       margin-right: auto;
     }
 
-    h1 {
-      font-size: 36px;
-      margin-bottom: 0;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
     nav ul.nav-links {
       list-style: none;
       padding: 0;
       display: flex;
       flex-wrap: wrap;
       gap: 15px;
-      margin-bottom: 30px;
+      margin: 0 0 30px 0;
       border-bottom: 2px solid #3498db;
       padding-bottom: 15px;
     }
@@ -42,6 +32,7 @@
       text-decoration: none;
       color: #b7472a;
       font-weight: 500;
+      font-size: 16px;
     }
 
     nav ul.nav-links li a:hover {
@@ -50,46 +41,50 @@
 
     .container {
       display: flex;
-      flex-wrap: wrap;
       gap: 40px;
-      margin-top: 30px;
+      margin-top: 20px;
     }
 
+    /* Index-specific styling */
     .bio {
-      flex: 1 1 60%;
+      flex: 1;
     }
 
     .bio h1 {
       font-size: 36px;
-      margin-bottom: 10px;
+      margin: 0 0 15px 0;
+      color: #2c3e50;
     }
 
     .bio p {
-      margin-bottom: 15px;
+      font-size: 16px;
       line-height: 1.6;
-    }
-
-    .photo {
-      flex: 1 1 30%;
-      text-align: center;
-    }
-
-    .photo img {
-      width: 100%;
-      max-width: 200px;
-      border-radius: 10px;
-    }
-
-    .photo p {
-      margin-top: 15px;
-      font-size: 14px;
-      color: #555;
+      margin: 0 0 20px 0;
     }
 
     .highlight {
       background-color: #f7f2ed;
       padding: 2px 4px;
       border-radius: 4px;
+    }
+
+    .photo {
+      flex: 0 0 260px;
+      text-align: center;
+    }
+
+    .photo img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .photo p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.4;
+      margin: 0;
     }
 
     @media (max-width: 768px) {
@@ -99,54 +94,60 @@
       
       .photo {
         order: -1;
-        margin-bottom: 20px;
+        text-align: left;
+      }
+      
+      .photo img {
+        width: 150px;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">About</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="#">Research</a></li>
-        <li><a href="#">Awards</a></li>
-        <li><a href="#">Teaching</a></li>
-        <li><a href="#">Hobbies</a></li>
-        <li><a href="certifications.html">Certifications</a></li>
-        <li><a href="#">CV</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">About</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="#">Research</a></li>
+      <li><a href="#">Awards</a></li>
+      <li><a href="#">Teaching</a></li>
+      <li><a href="#">Hobbies</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="#">CV</a></li>
+    </ul>
+  </nav>
 
   <div class="container">
     <section class="bio">
-      <h1><strong>Rupok Islam</strong> Avi</h1>
+      <h1>Rupok Islam Avi</h1>
       <p>IPE Undergrad Student, RUET | Research Enthusiast</p>
 
       <p>This is <em>Rupok Islam Avi</em>; however, you can call me <strong>Avi</strong>.</p>
 
       <p>
-        I am an undergraduate student of <strong>Industrial & Production Engineering</strong> at the 
+        I am an undergraduate student of <strong>Industrial & Production Engineering</strong> at the<br>
         <span class="highlight">Department of IPE, Rajshahi University of Engineering & Technology (RUET), Rajshahi</span>.
       </p>
 
       <p>
-        My research focuses on <strong>risk management</strong>, <strong>operations research</strong>, 
-        <strong>machine learning</strong>. 
-        I'm also interested in <strong>healthcare</strong>, <strong>supply chain optimization</strong>, and more.
+        My research focuses on <strong>risk management</strong>, <strong>operations research</strong>,<br> 
+        <strong>machine learning</strong>. I'm also interested in <strong>healthcare</strong>,<br>
+        <strong>supply chain optimization</strong>, and more.
       </p>
 
       <p><strong>Contact:</strong><br>
-        rupokislamavi.ruet@gmail.com<br>
+        rupokislamavi.ruet@gmail.com
       </p>
     </section>
 
     <section class="photo">
-      <img src="profile.jpg" alt="Profile picture of Rupok Islam Avi" />
-      <p>Pallabi,<br>Mirpur-12<br>Dhaka-1216, Bangladesh</p>
+      <img src="profile.jpg" alt="Rupok Islam Avi">
+      <p>Pallabi, Mirpur-12<br>
+      Dhaka-1216, Bangladesh</p>
     </section>
+  </div>
+</body>
+</html>
   </div>
 </body>
 </html>
