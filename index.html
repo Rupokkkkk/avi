@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rupok Islam Avi</title>
   <style>
-    /* Unified CSS for both pages */
     body {
       font-family: "Segoe UI", sans-serif;
       margin: 0;
@@ -17,6 +16,7 @@
       margin-right: auto;
     }
 
+    /* Neutral navbar styling */
     nav ul.nav-links {
       list-style: none;
       padding: 0;
@@ -24,19 +24,19 @@
       flex-wrap: wrap;
       gap: 15px;
       margin: 0 0 30px 0;
-      border-bottom: 2px solid #3498db;
+      border-bottom: 2px solid #eee;
       padding-bottom: 15px;
     }
 
     nav ul.nav-links li a {
       text-decoration: none;
-      color: #b7472a;
+      color: #333; /* Changed to dark neutral color */
       font-weight: 500;
       font-size: 16px;
     }
 
     nav ul.nav-links li a:hover {
-      text-decoration: underline;
+      color: #2c3e50; /* Darker hover color */
     }
 
     .container {
@@ -45,15 +45,12 @@
       margin-top: 20px;
     }
 
-    /* Index-specific styling */
-    .bio {
-      flex: 1;
-    }
-
-    .bio h1 {
+    /* Name styling */
+    .name-header {
       font-size: 36px;
       margin: 0 0 15px 0;
       color: #2c3e50;
+      font-weight: 600;
     }
 
     .bio p {
@@ -80,13 +77,6 @@
       margin-bottom: 15px;
     }
 
-    .photo p {
-      font-size: 14px;
-      color: #666;
-      line-height: 1.4;
-      margin: 0;
-    }
-
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
@@ -96,16 +86,13 @@
         order: -1;
         text-align: left;
       }
-      
-      .photo img {
-        width: 150px;
-      }
     }
   </style>
 </head>
 <body>
   <nav>
     <ul class="nav-links">
+      <li><h1 class="name-header">Rupok Islam Avi</h1></li>
       <li><a href="#">About</a></li>
       <li><a href="publications.html">Publications</a></li>
       <li><a href="#">Research</a></li>
@@ -119,8 +106,7 @@
 
   <div class="container">
     <section class="bio">
-      <h1>Rupok Islam Avi</h1>
-      <p>IPE Undergrad Student, RUET | Research Enthusiast</p>
+      <p class="subtitle">IPE Undergrad Student, RUET | Research Enthusiast</p>
 
       <p>This is <em>Rupok Islam Avi</em>; however, you can call me <strong>Avi</strong>.</p>
 
