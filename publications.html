@@ -1,30 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <script src="navbar-loader.js" defer></script> <!-- JS file to load navbar -->
   <meta charset="UTF-8">
-  <title>Publications</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications - Rupok Islam Avi</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      margin: 0;
-      padding: 40px;
-      background: #fff;
-      color: #333;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
+    /* Publications-specific styles */
     h1 {
       font-size: 36px;
       margin-bottom: 0;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 1.6;
     }
 
     .year {
@@ -111,24 +96,21 @@
   </style>
 </head>
 <body>
- <!-- Placeholder for navbar -->
-  <div id="navbar-container"></div>
-  <!-- Script to load navbar and highlight the active page link -->
-  <script>
-    fetch('navbar.html')
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById('navbar-placeholder').innerHTML = html;
-
-        // After navbar is loaded, highlight the current page
-        const currentPage = window.location.pathname.split("/").pop();
-        document.querySelectorAll(".navbar a").forEach(link => {
-          if (link.getAttribute("href") === currentPage) {
-            link.classList.add("active");
-          }
-        });
-      });
-  </script>
+  <header class="navbar-container">
+    <h1 class="name-header">Rupok Islam Avi</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="#">Publications</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Awards</a></li>
+        <li><a href="#">Teaching</a></li>
+        <li><a href="#">Hobbies</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="#">CV</a></li>
+      </ul>
+    </nav>
+  </header>
 <h1>Publications</h1>
 <p>Publications by categories in reversed chronological order.</p>
 <p>An up-to-date list is available on <a href="https://scholar.google.com/citations?user=pbKE0X8AAAAJ&hl=en">Google Scholar</a>.<br>
