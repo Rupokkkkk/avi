@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rupok Islam Avi</title>
   <style>
+    /* Unified Styles for Both Pages */
     body {
       font-family: "Segoe UI", sans-serif;
       margin: 0;
@@ -16,27 +17,44 @@
       margin-right: auto;
     }
 
-    /* Neutral navbar styling */
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .name-header {
+      font-size: 36px;
+      color: #2c3e50;
+      margin: 0;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
     nav ul.nav-links {
       list-style: none;
       padding: 0;
+      margin: 0;
       display: flex;
+      gap: 25px;
       flex-wrap: wrap;
-      gap: 15px;
-      margin: 0 0 30px 0;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 15px;
     }
 
     nav ul.nav-links li a {
       text-decoration: none;
-      color: #333; /* Changed to dark neutral color */
+      color: #333;
       font-weight: 500;
       font-size: 16px;
+      transition: color 0.2s ease;
     }
 
     nav ul.nav-links li a:hover {
-      color: #2c3e50; /* Darker hover color */
+      color: #2c3e50;
     }
 
     .container {
@@ -45,12 +63,9 @@
       margin-top: 20px;
     }
 
-    /* Name styling */
-    .name-header {
-      font-size: 36px;
-      margin: 0 0 15px 0;
-      color: #2c3e50;
-      font-weight: 600;
+    .bio {
+      flex: 1;
+      min-width: 60%;
     }
 
     .bio p {
@@ -86,23 +101,35 @@
         order: -1;
         text-align: left;
       }
+      
+      .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+      }
+      
+      nav ul.nav-links {
+        gap: 15px;
+      }
     }
   </style>
 </head>
 <body>
-  <nav>
-    <ul class="nav-links">
-      <li><h1 class="name-header">Rupok Islam Avi</h1></li>
-      <li><a href="#">About</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="#">Research</a></li>
-      <li><a href="#">Awards</a></li>
-      <li><a href="#">Teaching</a></li>
-      <li><a href="#">Hobbies</a></li>
-      <li><a href="certifications.html">Certifications</a></li>
-      <li><a href="#">CV</a></li>
-    </ul>
-  </nav>
+  <header class="navbar-container">
+    <h1 class="name-header">Rupok Islam Avi</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">About</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Awards</a></li>
+        <li><a href="#">Teaching</a></li>
+        <li><a href="#">Hobbies</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="#">CV</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <div class="container">
     <section class="bio">
@@ -131,9 +158,6 @@
       <p>Pallabi, Mirpur-12<br>
       Dhaka-1216, Bangladesh</p>
     </section>
-  </div>
-</body>
-</html>
   </div>
 </body>
 </html>
