@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Publications - Rupok Islam Avi</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="navbar-loader.js" defer></script> <!-- JS file to load navbar -->
+  <meta charset="UTF-8">
+  <title>Publications</title>
   <style>
-    /* Publications-specific styles */
-    .publications-content {
-      margin-top: 20px;
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: #fff;
+      color: #333;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     h1 {
       font-size: 36px;
-      margin-bottom: 15px;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
     }
 
     .year {
       font-size: 28px;
-      margin: 40px 0 20px;
-      color: #2c3e50;
+      margin-top: 40px;
     }
 
     .pub-entry {
@@ -42,37 +52,32 @@
     }
 
     .pub-title {
-      font-weight: 600;
-      font-size: 18px;
-      margin-bottom: 8px;
-      color: #2c3e50;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 4px;
     }
 
     .authors a {
       color: #b7472a;
       text-decoration: none;
-      font-size: 14px;
     }
 
     .meta {
       font-style: italic;
       color: #555;
-      font-size: 14px;
-      margin: 8px 0;
     }
 
     .btn-row {
-      margin-top: 12px;
+      margin-top: 10px;
     }
 
     .btn {
       border: 1px solid #999;
       background: #f9f9f9;
-      padding: 6px 12px;
+      padding: 5px 10px;
       font-size: 12px;
       cursor: pointer;
-      margin-right: 8px;
-      transition: all 0.2s ease;
+      margin-right: 5px;
     }
 
     .btn:hover {
@@ -84,10 +89,8 @@
       overflow: hidden;
       transition: all 0.4s ease;
       padding: 0 10px;
-      border: 1px dashed #ddd;
+      border: 1px dashed #888;
       margin-top: 10px;
-      font-size: 14px;
-      line-height: 1.6;
     }
 
     @media (max-width: 768px) {
@@ -101,176 +104,196 @@
         max-width: 400px;
       }
 
-      .navbar-container {
-        flex-direction: column;
-        gap: 15px;
+      .pub-content {
+        width: 100%;
       }
     }
   </style>
 </head>
 <body>
-  <header class="navbar-container">
-    <h1 class="name-header">Rupok Islam Avi</h1>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">About</a></li>
-        <li><a href="publications.html" class="active">Publications</a></li>
-        <li><a href="#">Research</a></li>
-        <li><a href="#">Awards</a></li>
-        <li><a href="#">Teaching</a></li>
-        <li><a href="#">Hobbies</a></li>
-        <li><a href="certifications.html">Certifications</a></li>
-        <li><a href="#">CV</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="publications-content">
-    <h1>Publications</h1>
-    <p>Publications by categories in reversed chronological order.</p>
-    <p>An up-to-date list is available on <a href="https://scholar.google.com/citations?user=pbKE0X8AAAAJ&hl=en">Google Scholar</a>.<br>
-    * denotes equal contribution</p>
-
-    <div class="year">2025</div>
-
-    <!-- Publication 1 -->
-    <div class="pub-entry">
-      <div><img src="bigdata.jpg" alt="Big Data and AI visualization"></div>
-      <div class="pub-content">
-        <div class="pub-title">Harnessing Big Data and AI for Supply Chain Resilience in the Garments Industry</div>
-        <div class="authors">
-          <a href="#">Mushfiquddin Rafid</a>, <a href="#">Rupok Islam Avi</a>, 
-          <a href="#">Tunazzina Binta Mostafa</a>, <a href="#">Rejwanul Haque Wasi</a>
-        </div>
-        <div class="meta">7th Bangladeshi International Conference on Industrial Engineering and Operations Management, Dec 2024</div>
-        <div class="btn-row">
-          <button class="btn" onclick="toggleAbstract(this)">ABS</button>
-          <button class="btn" onclick="window.open('https://ieomsociety.org/proceedings/bangladesh2024/228.pdf', '_blank')">PAPER</button>
-          <button class="btn">BIB</button>
-          <button class="btn">HTML</button>
-        </div>
-        <div class="abstract">
-          The Readymade Garments Industry of Bangladesh contributes about 80% of the export earnings and is currently positioned 2nd worldwide in exporting clothes and fabric industry. The competition within this industry is intensifying rapidly. In addition to fierce global competition labor union movements and higher-quality market demands are making it more challenging for brands to maintain their foothold. This study introduces strategies that may improve the resiliency of the supply chain in Bangladesh's Garments using AI and Big Data tools. About 3-4 case study designs are used in this study to compare the technological developments in Bangladesh's RMG industry with benchmark practices in China. Secondary sources such as case studies (HLA group, Alibaba, H&M, Zara), scholarly works, industry reports, and regulatory documents were used to gather data. The study shows China's adoption of advanced AI tools such as AI-based quality control cameras, Big Query to data analyze, blockchain platforms like Hyperledger Fabric, AI-generated digital patterns and Ethereum-based solutions, and physics-based simulators for garment modeling, which is contributing at an streamline operations, enhance transparency. On the other hand, Bangladesh has applied innovations like computer vision for quality inspections (Aamra vision by Amara technologies limited) and predictive analytics for supply chain planning and many . Development is still hampered by inadequate investment in digital technologies, a lack of qualified personnel, and inadequate infrastructure. Bangladesh's apparel and garments industry can improve supply chain resilience, lower costs, and improve compliance with international standards by giving targeted investments in AI and big data and making them a top priority. To ensure sustainability and long-term competitiveness, this study offers policymakers, governments and business executives practical suggestions for unlocking the full potential of AI and big data.
-        </div>
-      </div>
-    </div>
-
-    <!-- Publication 2 -->
-    <div class="pub-entry">
-      <div><img src="optimize.png" alt="Optimization chart"></div>
-      <div class="pub-content">
-        <div class="pub-title">Integrating Demand Forecasting and EOQ for Inventory Management in the Pharmaceutical Sector</div>
-        <div class="authors">
-          <a href="#">Rupok Islam Avi</a>, <a href="#">Md. Ferdaous Al-Farabi</a>, 
-          <a href="#">Ifte Kharul Islam Nahid</a>, <a href="#">Md. Limonur Rahman Lingkon</a>, 
-          <a href="#">Dr. Md. Sanowar Hossain</a>
-        </div>
-        <div class="meta">7th Bangladeshi International Conference on Industrial Engineering and Operations Management, Dec 2024</div>
-        <div class="btn-row">
-          <button class="btn" onclick="toggleAbstract(this)">ABS</button>
-          <button class="btn" onclick="window.open('https://ieomsociety.org/proceedings/bangladesh2024/187.pdf', '_blank')">PAPER</button>
-          <button class="btn">BIB</button>
-          <button class="btn">HTML</button>
-        </div>
-        <div class="abstract">
-          Effective inventory management is critical in the pharmaceutical sector, where the availability of essential medications directly impacts patient care. This study investigates the integration of demand forecasting techniques and inventory optimization to improve supply chain efficiency, focusing on GLYMIN, a vital drug for managing type 2 diabetes. Two forecasting methods, Exponential Smoothing and Linear Regression, were evaluated using sales data. The Linear regression has fewer errors with 771.04 MAD, 766,666.29 MSE, and 4.32% MAPE. The study incorporates Linear Regression forecasts into an Economic Order Quantity (EOQ) model to determine optimal inventory parameters, such as safety stock, reorder levels, and average inventory. Sensitivity analysis and Monte Carlo simulations were conducted to assess the impact of lead time and demand variability on inventory costs and stockout probabilities. Stockout probability was found to be 0.0006. Pharmaceutical companies can achieve more effective, responsive, and sustainable inventory management systems by addressing the particular difficulties faced by the industry, such as perishability, regulatory complexity, and demand variability. The proposed framework offers a scalable approach for other medications and contexts. However, the study is constrained by the size and scope of the dataset, suggesting future work could benefit from larger datasets and hybrid forecasting models to capture seasonality and nonlinear trends.
-        </div>
-      </div>
-    </div>
-
-    <!-- Publication 3 -->
-    <div class="pub-entry">
-      <div><img src="welders.jpg" alt="Welder at work"></div>
-      <div class="pub-content">
-        <div class="pub-title">Optimizing Welders' Posture: A Study on Ergonomic Solutions to Mitigate MSDs</div>
-        <div class="authors">
-          <a href="#">Md. Mushiur Rahman</a>, <a href="#">Mir Md. Mofachel Hossain</a>, 
-          <a href="#">Md. Mohibul Islam</a>, <a href="#">Rupok Islam Avi</a>
-        </div>
-        <div class="meta">6th International Conference on Mechanical, Industrial and Materials Engineering, Dec 2024</div>
-        <div class="btn-row">
-          <button class="btn" onclick="toggleAbstract(this)">ABS</button>
-          <button class="btn" onclick="window.open('https://www.researchgate.net/publication/387048383_Optimizing_Welders_Posture_A_Study_on_Ergonomic_Solutions_to_Mitigate_MSDs', '_blank')">PAPER</button>
-          <button class="btn">BIB</button>
-          <button class="btn">HTML</button>
-        </div>
-        <div class="abstract">
-          This study explores the implementation of ergonomic interventions in a welding workshop to reduce the risk of musculoskeletal disorders (MSDs) among welders. The objective is to assess the incidence of MSDs and develop tailored ergonomic solutions to enhance safety and productivity. Ergonomic assessment tools such as Rapid Upper Limb Assessment (RULA), Rapid Entire Body Assessment (REBA), and Ovako Working Posture Analysis System (OWAS), along with advanced simulation software like CATIA was used to create accurate postural models. The findings reveal significant ergonomic risks in welding operations, leading to the development of optimal working postures to minimize injuries and risks. Customized interventions, including enhanced sitting and standing postures with ergonomically built furniture, led to a decrease in RULA scores from 6 to 3, REBA scores from 8 to 2, and OWAS scores from 3 to 1. These enhancements underscore the effectiveness of focused ergonomic interventions in reducing MSD risks, improving worker well-being, and increasing workshop productivity.
-        </div>
-      </div>
-    </div>
-
-    <!-- Publication 4 -->
-    <div class="pub-entry">
-      <div><img src="welded.jpg" alt="Welded metal structure"></div>
-      <div class="pub-content">
-        <div class="pub-title">Effect of Annealing Heat Treatment on Mechanical and Microstructural Properties of Electric Arc Welded TMT Rebar</div>
-        <div class="authors">
-          <a href="#">Samiul Islam Pranto</a>, <a href="#">Mashhud Hasan Al Faruq</a>, 
-          <a href="#">Mst Kasfia</a>, <a href="#">Rupok Islam Avi</a>, 
-          <a href="#">Fabliha Islam</a>
-        </div>
-        <div class="meta">Under Review</div>
-        <div class="btn-row">
-          <button class="btn" onclick="toggleAbstract(this)">ABS</button>
-          <button class="btn" onclick="window.open('https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4931306#paper-references-widget', '_blank')">PAPER</button>
-          <button class="btn">BIB</button>
-          <button class="btn">HTML</button>
-        </div>
-        <div class="abstract">
-          The study explores the effect of annealing heat treatment on the mechanical and microstructural properties of TMT rebar. Tensile test was conducted and microstructures were observed for three types of specimen, including TMT rebar, welded TMT rebar and welded TMT rebar after annealing. The analyses revealed a 13.935% drop in yield strength after welding, which further reduced by 49.55% following annealing. The modulus of elasticity decreased by 9.31% in the annealed rebar compared to its welded counterpart. Ultimate tensile strength reduced by 31.428% in the annealed specimen, while total elongation after fracture was increased by 159.68%. Welding produced larger grains with a ferritic-pearlitic structure, likely due to a higher cooling rate. The annealed specimen exhibited even coarser grains leading to further reductions in strength. The recrystallization process induced by annealing made the welded zone softer, enhancing ductility and increasing elongation. Grain growth reduced the rebar's stiffness, leading to decreased elasticity.
-        </div>
-      </div>
-    </div>
-
-    <!-- Publication 5 -->
-    <div class="pub-entry">
-      <div><img src="wheelchair.jpg" alt="Wheelchair-bed prototype"></div>
-      <div class="pub-content">
-        <div class="pub-title">Development of an Innovative Wheelchair-Bed for Enhanced Patient Care in Bangladesh</div>
-        <div class="authors">
-          <a href="#">Rupok Islam Avi</a>, <a href="#">R. Rafiul Haque Ayon</a>, 
-          <a href="#">Md. Ariful Haque</a>, <a href="#">Shahed Mahmud</a>, 
-          <a href="#">Idrak Al Rakin</a>, <a href="#">Shah Md Tasrifur Rahim</a>, 
-          <a href="#">Md Fardin Islam</a>
-        </div>
-        <div class="meta">6th International Conference on Mechanical, Industrial and Materials Engineering, Dec 2024</div>
-        <div class="btn-row">
-          <button class="btn" onclick="toggleAbstract(this)">ABS</button>
-          <button class="btn" onclick="window.open('https://www.researchgate.net/publication/387052210_Development_of_an_Innovative_Wheelchair-Bed_for_Enhanced_Patient_Care_in_Bangladesh_Integrating_Comfort_and_Accessibility_Features', '_blank')">PAPER</button>
-          <button class="btn">BIB</button>
-          <button class="btn">HTML</button>
-        </div>
-        <div class="abstract">
-          The incorporation of sophisticated functionalities into assistive devices like wheelchairs has grown progressively essential in meeting the varied requirements of patients who are incapable to move around in Bangladesh. This study investigates the development of a wheelchair-bed with advanced features in order to enable patients who are immobile to have better mobility and comfort. A thorough customer survey reveals a strong desire for enhanced comfort and accessibility features, which are presently absent from current products. The customers’ needs are gathered and examined for integration into the product through the use of the Kano Model Assessment, Function Structure Diagram, and Quality Function Deployment (QFD). The Kano Model is employed to organize the product's features, and QFD helped to create the functional structure by translating customer requirements into technical specifications. The function structure also facilitates in designing the product and conducting stress analysis on various parts. This study determines the comfort and satisfaction levels associated with the 180 reclining feature & commode facility integrated in wheelchair. Ultimately, the wheelchair, designed in alignment with customer requirements and competitive analysis, considerably elevates patient care standards while profoundly enhancing the quality of life for individuals with disabilities.
-        </div>
-      </div>
-    </div>
-  </main>
-
+ <!-- Placeholder for navbar -->
+  <div id="navbar-container"></div>
+  <!-- Script to load navbar and highlight the active page link -->
   <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('navbar-placeholder').innerHTML = html;
+
+        // After navbar is loaded, highlight the current page
+        const currentPage = window.location.pathname.split("/").pop();
+        document.querySelectorAll(".navbar a").forEach(link => {
+          if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+          }
+        });
+      });
+  </script>
+<h1>Publications</h1>
+<p>Publications by categories in reversed chronological order.</p>
+<p>An up-to-date list is available on <a href="https://scholar.google.com/citations?user=pbKE0X8AAAAJ&hl=en">Google Scholar</a>.<br>
+  * denotes equal contribution</p>
+
+<div class="year">2025</div>
+
+<!-- Publication 1 -->
+<div class="pub-entry">
+  <div><img src="bigdata.jpg"></div>
+  <div class="pub-content">
+    <div class="pub-title">Harnessing Big Data and AI for Supply Chain Resilience in the Garments Industry</div>
+    <div class="authors">
+      <a href="#">Mushfiquddin Rafid</a>, <a href="#">Rupok Islam Avi</a>, <a href="#">Tunazzina Binta Mostafa</a>, <a href="#">Rejwanul Haque Wasi</a>
+    </div>
+    <div class="meta">7th Bangladeshi Int'l Conf. on Industrial Engineering and Operations Management, Dec 2024</div>
+    <div class="btn-row">
+      <button class="btn" onclick="toggleAbstract(this)">ABS</button>
+      <button class="btn" onclick="window.open('https://ieomsociety.org/proceedings/bangladesh2024/228.pdf', '_blank')">
+    PAPER
+    </button>
+      <button class="btn">BIB</button>
+      <button class="btn">HTML</button>
+    </div>
+    <div class="abstract">
+      The Readymade Garments Industry of Bangladesh contributes about 80% of the export earnings and is currently positioned 2nd worldwide in exporting clothes and fabric industry. The competition within this industry is intensifying rapidly. In addition to fierce global competition labor union movements and higher-quality market demands are making it more challenging for brands to maintain their foothold. This study introduces strategies that may improve the resiliency of the supply chain in Bangladesh's Garments using AI and Big Data tools. About 3-4 case study designs are used in this study to compare the technological developments in Bangladesh's RMG industry with benchmark practices in China. Secondary sources such as case studies (HLA group, Alibaba, H&M, Zara), scholarly works, industry reports, and regulatory documents were used to gather data. The study shows China's adoption of advanced AI tools such as AI-based quality control cameras, Big Query to data analyze, blockchain platforms like Hyperledger Fabric, AI-generated digital patterns and Ethereum-based solutions, and physics-based simulators for garment modeling, which is contributing at an streamline operations, enhance transparency. On the other hand, Bangladesh has applied innovations like computer vision for quality inspections (Aamra vision by Amara technologies limited) and predictive analytics for supply chain planning and many . Development is still hampered by inadequate investment in digital technologies, a lack of qualified personnel, and inadequate infrastructure. Bangladesh's apparel and garments industry can improve supply chain resilience, lower costs, and improve compliance with international standards by giving targeted investments in AI and big data and making them a top priority. To ensure sustainability and long-term competitiveness, this study offers policymakers, governments and business executives practical suggestions for unlocking the full potential of AI and big data.
+    </div>
+  </div>
+</div>
+
+<!-- Publication 2 -->
+<div class="pub-entry">
+  <div><img src="optimize.png" alt="Publication Image 2"></div>
+  <div class="pub-content">
+    <div class="pub-title">Integrating Demand Forecasting and EOQ for Inventory Management in the Pharmaceutical Sector</div>
+    <div class="authors">
+      <a href="#">Rupok Islam Avi</a>, <a href="#">Md. Ferdaous Al-Farabi</a>, <a href="#">Ifte Kharul Islam Nahid</a>, <a href="#">Md. Limonur Rahman Lingkon</a>, <a href="#">Dr. Md. Sanowar Hossain</a>
+    </div>
+    <div class="meta">7th Bangladeshi Int'l Conf. on Industrial Engineering and Operations Management, Dec 2024</div>
+    <div class="btn-row">
+      <button class="btn" onclick="toggleAbstract(this)">ABS</button>
+      <button class="btn" onclick="window.open('https://ieomsociety.org/proceedings/bangladesh2024/187.pdf', '_blank')">
+    PAPER
+    </button>
+      <button class="btn">BIB</button>
+      <button class="btn">HTML</button>
+    </div>
+    <div class="abstract">
+      Effective inventory management is critical in the pharmaceutical sector, where the availability of essential medications directly impacts patient care. This study investigates the integration of demand forecasting techniques and inventory optimization to improve supply chain efficiency, focusing on GLYMIN, a vital drug for managing type 2 diabetes. Two forecasting methods, Exponential Smoothing and Linear Regression, were evaluated using sales data. The Linear regression has fewer errors with 771.04 MAD, 766,666.29 MSE, and 4.32% MAPE. The study incorporates Linear Regression forecasts into an Economic Order Quantity (EOQ) model to determine optimal inventory parameters, such as safety stock, reorder levels, and average inventory. Sensitivity analysis and Monte Carlo simulations were conducted to assess the impact of lead time and demand variability on inventory costs and stockout probabilities. Stockout probability was found to be 0.0006. Pharmaceutical companies can achieve more effective, responsive, and sustainable inventory management systems by addressing the particular difficulties faced by the industry, such as perishability, regulatory complexity, and demand variability. The proposed framework offers a scalable approach for other medications and contexts. However, the study is constrained by the size and scope of the dataset, suggesting future work could benefit from larger datasets and hybrid forecasting models to capture seasonality and nonlinear trends.
+    </div>
+  </div>
+</div>
+
+<!-- Publication 3 -->
+<div class="pub-entry">
+  <div><img src="welders.jpg" alt="Publication Image 3"></div>
+  <div class="pub-content">
+    <div class="pub-title">Optimizing Welders' Posture: A Study on Ergonomic Solutions to Mitigate MSDs</div>
+    <div class="authors">
+      <a href="#">Md. Mushiur Rahman</a>, <a href="#">Mir Md. Mofachel Hossain</a>, <a href="#">Md. Mohibul Islam</a>, <a href="#">Rupok Islam Avi</a>
+    </div>
+    <div class="meta">6th International Conference on Mechanical, Industrial and Materials Engineering, Dec 2024</div>
+   <div class="btn-row">
+    <button class="btn" onclick="toggleAbstract(this)">ABS</button>
+    <button class="btn" onclick="window.open('https://www.researchgate.net/publication/387048383_Optimizing_Welders_Posture_A_Study_on_Ergonomic_Solutions_to_Mitigate_MSDs', '_blank')">
+    PAPER
+    </button>
+    <button class="btn">BIB</button>
+    <button class="btn">HTML</button>
+  </div>
+
+    <div class="abstract">
+      This study explores the implementation of ergonomic interventions in a welding workshop to reduce the risk of musculoskeletal disorders (MSDs) among welders. The objective is to assess the incidence of MSDs and develop tailored ergonomic solutions to enhance safety and productivity. Ergonomic assessment tools such as Rapid Upper Limb Assessment (RULA), Rapid Entire Body Assessment (REBA), and Ovako Working Posture Analysis System (OWAS), along with advanced simulation software like CATIA was used to create accurate postural models. The findings reveal significant ergonomic risks in welding operations, leading to the development of optimal working postures to minimize injuries and risks. Customized interventions, including enhanced sitting and standing postures with ergonomically built furniture, led to a decrease in RULA scores from 6 to 3, REBA scores from 8 to 2, and OWAS scores from 3 to 1. These enhancements underscore the effectiveness of focused ergonomic interventions in reducing MSD risks, improving worker well-being, and increasing workshop productivity.
+    </div>
+  </div>
+</div>
+
+<!-- Publication 4 -->
+<div class="pub-entry">
+  <div><img src="welded.jpg" alt="Publication Image 4"></div>
+  <div class="pub-content">
+    <div class="pub-title">Effect of Annealing Heat Treatment on Mechanical and Microstructural Properties of Electric Arc Welded TMT Rebar</div>
+    <div class="authors">
+      <a href="#">Samiul Islam Pranto</a>, <a href="#">Mashhud Hasan Al Faruq</a>, <a href="#">Mst Kasfia</a>, <a href="#">Rupok Islam Avi</a>, <a href="#">Fabliha Islam</a>
+    </div>
+    <div class="meta">Under Review</div>
+    <div class="btn-row">
+      <button class="btn" onclick="toggleAbstract(this)">ABS</button>
+      <button class="btn" onclick="window.open('https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4931306#paper-references-widget', '_blank')">
+    PAPER
+    </button>
+
+      <button class="btn">BIB</button>
+      <button class="btn">HTML</button>
+    </div>
+    <div class="abstract">
+      The study explores the effect of annealing heat treatment on the mechanical and microstructural properties of TMT rebar. Tensile test was conducted and microstructures were observed for three types of specimen, including TMT rebar, welded TMT rebar and welded TMT rebar after annealing. The analyses revealed a 13.935% drop in yield strength after welding, which further reduced by 49.55% following annealing. The modulus of elasticity decreased by 9.31% in the annealed rebar compared to its welded counterpart. Ultimate tensile strength reduced by 31.428% in the annealed specimen, while total elongation after fracture was increased by 159.68%. Welding produced larger grains with a ferritic-pearlitic structure, likely due to a higher cooling rate. The annealed specimen exhibited even coarser grains leading to further reductions in strength. The recrystallization process induced by annealing made the welded zone softer, enhancing ductility and increasing elongation. Grain growth reduced the rebar's stiffness, leading to decreased elasticity.
+    </div>
+  </div>
+</div>
+
+<!-- Publication 5 -->
+<div class="pub-entry">
+  <div><img src="wheelchair.jpg"></div>
+  <div class="pub-content">
+    <div class="pub-title">Development of an Innovative Wheelchair-Bed for Enhanced Patient Care in Bangladesh</div>
+    <div class="authors">
+      <a href="#">Rupok Islam Avi</a>, <a href="#">R. Rafiul Haque Ayon</a>, <a href="#">Md. Ariful Haque</a>, <a href="#">Shahed Mahmud</a>, <a href="#">Idrak Al Rakin</a>, <a href="#">Shah Md Tasrifur Rahim</a>, <a href="#">Md Fardin Islam</a>
+    </div>
+    <div class="meta">6th International Conference on Mechanical, Industrial and Materials Engineering, Dec 2024</div>
+    <div class="btn-row">
+      <button class="btn" onclick="toggleAbstract(this)">ABS</button>
+      <button class="btn" onclick="window.open('https://www.researchgate.net/publication/387052210_Development_of_an_Innovative_Wheelchair-Bed_for_Enhanced_Patient_Care_in_Bangladesh_Integrating_Comfort_and_Accessibility_Features', '_blank')">
+    PAPER
+    </button>
+      <button class="btn">BIB</button>
+      <button class="btn">HTML</button>
+    </div>
+    <div class="abstract">
+      The incorporation of sophisticated functionalities into assistive devices like wheelchairs has grown progressively essential in meeting the varied requirements of patients who are incapable to move around in Bangladesh. This study investigates the development of a wheelchair-bed with advanced features in order to enable patients who are immobile to have better mobility and comfort. A thorough customer survey reveals a strong desire for enhanced comfort and accessibility features, which are presently absent from current products. The customers’ needs are gathered and examined for integration into the product through the use of the Kano Model Assessment, Function Structure Diagram, and Quality Function Deployment (QFD). The Kano Model is employed to organize the product's features, and QFD helped to create the functional structure by translating customer requirements into technical specifications. The function structure also facilitates in designing the product and conducting stress analysis on various parts. This study determines the comfort and satisfaction levels associated with the 180 reclining feature & commode facility integrated in wheelchair. Ultimately, the wheelchair, designed in alignment with customer requirements and competitive analysis, considerably elevates patient care standards while profoundly enhancing the quality of life for individuals with disabilities.
+    </div>
+  </div>
+</div>
+
+<script>
   function toggleAbstract(button) {
     const allAbstracts = document.querySelectorAll(".abstract");
+    const allButtons = document.querySelectorAll(".btn-row .btn");
+
     const pubContent = button.closest(".pub-content");
     const abstract = pubContent.querySelector(".abstract");
 
-    // Close all abstracts except current
+    // Hide all others
     allAbstracts.forEach(abs => {
       if (abs !== abstract) {
         abs.style.maxHeight = null;
-        abs.previousElementSibling.querySelector('.btn').textContent = "ABS";
+        abs.style.padding = "0 10px";
+        abs.style.overflow = "hidden";
       }
     });
 
-    // Toggle current abstract
+    allButtons.forEach(btn => {
+      if (btn !== button && btn.textContent === "HIDE") {
+        btn.textContent = "ABS";
+      }
+    });
+
+    // Toggle current
     if (abstract.style.maxHeight) {
       abstract.style.maxHeight = null;
+      abstract.style.padding = "0 10px";
+      abstract.style.overflow = "hidden";
       button.textContent = "ABS";
     } else {
       abstract.style.maxHeight = abstract.scrollHeight + "px";
+      abstract.style.padding = "10px";
+      abstract.style.overflow = "visible";
       button.textContent = "HIDE";
     }
   }
-  </script>
+</script>
+
 </body>
+</html>
+
+</body>
+</html>
 </html>
