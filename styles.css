@@ -48,3 +48,22 @@ main {
   margin: auto;
   padding: 40px;
 }
+/* Add to styles.css */
+.hobby-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.hobby-gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.hobby-caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 5px;
+}
+
