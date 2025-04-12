@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rupok Islam Avi</title>
   <link rel="stylesheet" href="styles.css">
   <style>
@@ -29,30 +28,56 @@
       border-radius: 8px;
     }
 
-    .extra-photo {
-      margin-top: 50px;
+    /* Slideshow */
+    .Gallery {
       text-align: center;
+      margin-top: 50px;
     }
 
-    .extra-photo img {
-      width: 400px;
-      max-width: 100%;
+    #slideshow {
+      width: 450px;
+      height: 350px;
+      object-fit: cover;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .dots {
+      margin-top: 15px;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      margin: 0 6px;
+      border-radius: 50%;
+      background-color: #ccc;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .dot.active {
+      background-color: #555;
     }
   </style>
 </head>
 <body>
   <header class="navbar-container">
-    <h1 class="name-header">Rupok Islam Avi</h1>
+    <div class="header-content">
+      <img src="profile.jpg" alt="Site Logo" class="header-logo">
+      <h1 class="name-header">
+        Rupok Islam <span>Avi</span>
+      </h1>
+    </div>
     <nav>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">About</a></li>
+        <li><a href="index.html">About</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="awards.html">Awards</a></li>
         <li><a href="teaching.html">Teaching</a></li>
-        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="hobbies.html" class="active">Hobbies</a></li>
         <li><a href="certifications.html">Certifications</a></li>
         <li><a href="cv.html">CV</a></li>
       </ul>
@@ -60,42 +85,21 @@
   </header>
 
   <main class="container">
-    <div class="bio-section">
-      <div class="main-content">
-        <h2>IPE Undergrad Student, RUET | Research Enthusiast</h2>
-        <p>This is <em>Rupok Islam Avi</em>; however, you can call me <strong>Avi</strong>.</p>
-        
-        <p>I am an undergraduate student of <strong>Industrial & Production Engineering</strong> at the<br>
-        <span class="highlight">Department of IPE, Rajshahi University of Engineering & Technology (RUET), Rajshahi</span>.</p>
+    <h1>Hobbies</h1>
+    <p><strong>Online Learning and Continuing Education:</strong> My thirst for knowledge in my research domain drives me to engage in continuous learning. I regularly follow online blogs such as  and stay updated with the latest state-of-the-art research on <em>ResearchGate</em>. Additionally, I take courses on platforms like  <em>edX</em>, and <em>Coursera</em>. This commitment to ongoing education helps me stay current and competitive with the latest research trends in my field. My online course certificates are showcased on my LinkedIn profile.
+    </p>
+    <p><strong>Sports and Team Competitions:</strong> Sports have always played a vital role in shaping my team spirit, leadership, and resilience. Over the years, I've actively participated in various competitive tournaments, showcasing my enthusiasm and discipline on the field. In <strong>2025</strong>, I proudly represented the <em>'Meow Lovers'</em> team in the <strong>Industrial Super League Season 1</strong> (Football Tournament), where we clinched the championship title. Earlier, in <strong>2024</strong>, I was part of the winning team <em>'Chini Babas'</em> in the <strong>Industrial Premier League Season 4</strong> (Cricket Tournament). These experiences were not only competitive but also deeply rewarding, reinforcing the values of teamwork and strategic thinking.</p>
 
-        <p>My research focuses on:</p>
-        <ul>
-          <li>Risk management</li>
-          <li>Operations research</li>
-          <li>Machine learning</li>
-          <li>Healthcare supply chain optimization</li>
-        </ul>
-      </div>
-
-      <div class="profile-photo">
-        <img src="profile.jpg" alt="Rupok Islam Avi">
-        <div class="contact-info">
-          <h3>Contact</h3>
-          <p>rupokislamavi.ruet@gmail.com</p>
-          <h3>Address</h3>
-          <p>Pallabi, Mirpur-12<br>
-          Dhaka-1216, Bangladesh</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 👇 Additional image you uploaded -->
-    <div class="extra-photo">
-      <img src="image.png" alt="Extra Photo">
-    </div>
-  </main>
-</body>
-</html>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+  <div style="flex: 1; min-width: 250px;">
+    <img src="images/meow_lovers.jpg" alt="Meow Lovers - Football Champs" style="width: 100%; border-radius: 8px;">
+    <p style="text-align: center; font-style: italic; margin-top: 5px;">Industrial Super League 2025 – Meow Lovers (Champions)</p>
+  </div>
+  <div style="flex: 1; min-width: 250px;">
+    <img src="images/chini_babas.jpg" alt="Chini Babas - Cricket Champs" style="width: 100%; border-radius: 8px;">
+    <p style="text-align: center; font-style: italic; margin-top: 5px;">Industrial Premier League 2024 – Chini Babas (Champions)</p>
+  </div>
+</div>
 
 
   </main>
