@@ -60,6 +60,55 @@
     .dot.active {
       background-color: #555;
     }
+    .travel-section {
+  margin-top: 60px;
+}
+
+.travel-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.travel-list {
+  list-style: disc inside;
+  margin-bottom: 30px;
+  padding-left: 0;
+  line-height: 1.8;
+}
+
+.travel-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.travel-gallery div {
+  flex: 1 1 200px;
+  text-align: center;
+  max-width: 220px;
+}
+
+.travel-gallery img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.travel-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.travel-gallery p {
+  margin-top: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
   </style>
 </head>
 <body>
@@ -110,6 +159,26 @@
     <p class="hobby-caption">Industrial Premier League 2024 – Chini Babas (Champions)</p>
   </div>
 </div>
+<section class="travel-section">
+  <h2>Travelling</h2>
+  <p>Exploring new places enriches my perspective and fuels my creativity. Whether it's the tranquility of the hills or the echoes of history in ancient cities, I find every journey inspiring. Some of my most memorable travels include:</p>
+
+  <ul class="travel-list">
+    <li><strong>Sajek Valley:</strong> Nestled in the hills of Rangamati, Sajek offers breathtaking views, serene cloudscapes, and a refreshing escape into nature.</li>
+    <li><strong>Cox's Bazar:</strong> Home to the world’s longest natural sea beach, this destination is where the waves meet calm reflection and joy.</li>
+    <li><strong>Rabindra Kuthibari:</strong> A historical site rich with the legacy of Rabindranath Tagore, where art and culture linger in every corner.</li>
+    <li><strong>Panam City:</strong> A preserved city of colonial-era architecture, echoing the bygone days of grandeur and trade.</li>
+    <li><strong>Mohera Zamindar Bari:</strong> A majestic estate with stunning architectural symmetry and a sense of aristocratic history.</li>
+  </ul>
+
+  <div class="travel-gallery">
+    <div><img src="sajek.jpg" alt="Sajek Valley"><p>Sajek Valley</p></div>
+    <div><img src="cox.jpg" alt="Cox's Bazar"><p>Cox's Bazar</p></div>
+    <div><img src="kuthibari.jpg" alt="Rabindra Kuthibari"><p>Rabindra Kuthibari</p></div>
+    <div><img src="panam.jpg" alt="Panam City"><p>Panam City</p></div>
+    <div><img src="mohera.jpg" alt="Mohera Zamindar Bari"><p>Mohera Zamindar Bari</p></div>
+  </div>
+</section>
 
 
 
